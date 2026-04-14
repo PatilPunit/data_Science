@@ -1,0 +1,23 @@
+panda is a most essential and useful python package in data anlysis
+it provide the vast variety of tools and functions can be used in data analysis
+pandas are very strong even it can replce ms excel
+
+
+Advantages 1. no limitaion of data 2. Can do complex data transformation 3.cross platform capabillities
+
+panda has data structures to store data called array
+
+1d array = series
+2d array = data frame
+    
+
+     states    pop 
+   1 MH        1228323293
+   2 GJ        9874954524
+   3 UP        2255555214
+   4 TM        4875452557
+
+the rows are series while  whole structure called data frame
+the series of number called index
+the column of heading called features and the row called observations
+

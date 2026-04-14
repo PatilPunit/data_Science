@@ -1,0 +1,13 @@
+variables are the containers which save the value and adrress of given datatype
+in other laungauges like c , java we need to spevcify data type of variable 
+           
+           int num
+but in python we dont need to specify such datatype , the datatype automtically assigan to variable
+we can save any kind of thing in variable
+
+rules of naming variables
+ 1. cant be keyword
+ 2. cant start with numbers
+ 3. cant take any special symbol
+ 
+ ex. @,;,?   2pi   pass

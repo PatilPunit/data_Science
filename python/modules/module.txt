@@ -1,0 +1,21 @@
+module is the  file contain functions and variables to use without making again by user
+package is bundle of modules
+
+we can import module using pip or can make module we will  see how to  make module 
+we need to make init file for accesing directly the modules
+
+
+there are lot of external and inetrnal packages in python 
+we just need to import package 
+if we directly use import then whole package means all modules get impoerted
+        import numpy
+
+we can use from to import specific module
+     from numpy import array
+
+we can use as to specify name of package in code
+
+      import numpy as np
+
+pip is use to intall such packages
+     pip install numpy
