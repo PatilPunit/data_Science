@@ -98,3 +98,35 @@ print('\n', '='*180)
 print(~df['duplicate'])
 unique= df[~df['duplicate']]
 print(unique['duplicate'].value_counts())
+
+#droping duplicates usimg drop_duplicate methid 
+#below function will give you all the drop the all duplicates in company column
+print(df.drop_duplicates(['Company']))
+print(df.drop_duplicates(['Company']) [['Company','Price_euros']])
+
+# 3 now finding the cheapest and most expensive laptop per compay
+# first sort the dataframe
+
+print(df.sort_values(['Company','Price_euros']))
+print(df.drop_duplicates(['Company'],keep='first') [['Company','Price_euros']])
+print(df.drop_duplicates(['Company'],keep='last') [['Company','Price_euros']])
+
+# 3 to start the index from 0 by igniring actual index we use
+ing_ind=df.drop_duplicates(['Company'],keep='first',ignore_index=True) [['Company','Price_euros']]
+print(ing_ind)
+
+sort_screen=df.sort_values(['Company','Inches'])
+print(sort_screen)
+
+sm_screen = df.drop_duplicates(['Company'],keep='first',ignore_index=False) [['Company','Inches']]
+bg_screen = df.drop_duplicates(['Company'],keep='last',ignore_index=False) [['Company','Inches']]
+print(sm_screen)
+print(bg_screen)
+
+#unique() - this method provide an array of unique value if series
+
+print(df['Company'].unique())
+print(df['Inches'].unique())
+print(len(df['Price_euros'].unique()))
+
+print(df['Company'].nunique())
