@@ -1,6 +1,7 @@
 import pandas as  pd
 import numpy as np
 
+#drop method is use to drop means remove the columns or rows
 df=pd.read_csv('/home/punit/Documents/Ds/pandas/players_20.csv')
 df=df[['short_name','long_name','age','dob','height_cm','weight_kg','club']]
 df.set_index('short_name',inplace=True)
