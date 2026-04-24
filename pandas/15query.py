@@ -23,7 +23,13 @@ age_not34=df.query("not (age > 34)")
 print(age_34)
 
 #players born after 1990
+#conversion of datatype
 # import datetime as dt
 df['dob']=df['dob'].astype('datetime64[s]')
+print(df['dob'].dt.year)
 born_1990=df.query('dob.dt.year > 1990')
 print(born_1990)
+
+#players has height greater than 1.8 meters
+h18=df.query('height_cm/100 > 1.8')
+print(h18)
