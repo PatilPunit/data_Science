@@ -11,3 +11,5 @@ print(df)
 df.drop(columns=['long_name'],axis=0,inplace=True)
 df.drop('age',axis=1,inplace=True)
 print(df)
+#  to drop last column
+df.drop(columns=[-1],axis=1)
