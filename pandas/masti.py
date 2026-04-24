@@ -9,9 +9,9 @@ df=df[['short_name','overall','potential','preferred_foot','skill_moves','intern
 print(df)
 df.set_index('short_name',inplace=True)
 print(df)
-print(df.loc['L. Messi','overall'])
-print(df.loc['Wang Haijian','potential'])
 
-print(df.loc[:,'potential'])
-print(df.loc[df['potential']>90,'overall'])
+wow_sam=df[['overall','potential','preferred_foot','skill_moves','international_reputation']].sample(6,random_state=99,weights="overall")
+print(wow_sam)
 
+print(df.iloc[[1,2,3],:])
+print(df.iloc[[list((df['overall']>80 ) & (df['potential']>75))],[1,2,3]])
