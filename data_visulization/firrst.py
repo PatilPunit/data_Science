@@ -40,4 +40,6 @@ dfyear.rename(columns={2020:'2020'},inplace=True)
 dfyear.plot(kind='pie',y='2020')
 plt.show()
 
+dfpop5['United States'].plot(kind='box')
+plt.show()
 
