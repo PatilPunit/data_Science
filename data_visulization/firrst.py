@@ -34,3 +34,4 @@ dfyearn=dfpop5[dfpop5.index.isin([1980,1990,2000,2020])]
 
 dfyearn.plot(kind='bar')
 plt.show()
+
