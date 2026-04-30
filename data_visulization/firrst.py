@@ -42,7 +42,15 @@ plt.show()
 
 dfpop5['United States'].plot(kind='box')
 plt.show()
-"""
+
 
 dfpop5.plot(kind='box')
+plt.show()
+"""
+#histogram
+
+dfpop5['Indonesia'].plot(kind='hist')
+plt.show()
+
+dfpop5[['Indonesia','India']].plot(kind='hist')
 plt.show()
