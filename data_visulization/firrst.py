@@ -15,7 +15,7 @@ print(dfpop)
 
 dfpop5=dfpop[['United States','India','Brazil','Indonesia','China']]
 print(dfpop5)
-
+"""
 dfpop5.plot(kind='line',xlabel='Year',ylabel='Population',title='Population Growth (1920-2020)',figsize=(14,12))
 plt.show()
 
@@ -42,4 +42,7 @@ plt.show()
 
 dfpop5['United States'].plot(kind='box')
 plt.show()
+"""
 
+dfpop5.plot(kind='box')
+plt.show()
