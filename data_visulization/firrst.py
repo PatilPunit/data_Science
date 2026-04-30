@@ -30,10 +30,14 @@ plt.show()
 #selecting n years
 
 dfyearn=dfpop5[dfpop5.index.isin([1980,1990,2000,2020])]
-# dfyearn =dfyearn.T
-
 dfyearn.plot(kind='bar')
 plt.show()
 
+#piechart
+# Making int to str
+
+dfyear.rename(columns={2020:'2020'},inplace=True)
+dfyear.plot(kind='pie',y='2020')
+plt.show()
 
 
