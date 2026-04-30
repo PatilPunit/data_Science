@@ -46,11 +46,17 @@ plt.show()
 
 dfpop5.plot(kind='box')
 plt.show()
-"""
+
 #histogram
 
 dfpop5['Indonesia'].plot(kind='hist')
 plt.show()
 
 dfpop5[['Indonesia','India']].plot(kind='hist')
+plt.show()
+
+"""
+
+df=df[df['country'].isin(['United States','India','Brazil','Indonesia','China'])]
+df.plot(kind='scatter',x='year',y='population')
 plt.show()
