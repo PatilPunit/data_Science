@@ -18,6 +18,17 @@ print(dfpop5)
 
 # dfpop5.iplot(kind='line',colors='red')
 # plt.show()
-
+"""
 fig = ex.line(dfpop5)
+fig.show()
+
+dfpop5=dfpop5[dfpop5.index.isin([2020])]
+dfpop5=dfpop5.T
+fig=ex.bar(dfpop5)
+fig.show()
+"""
+
+dfpop5=dfpop5[dfpop5.index.isin([1970,1980,1990,2000,2020])]
+# dfpop5=dfpop5.T
+fig=ex.bar(dfpop5)
 fig.show()
