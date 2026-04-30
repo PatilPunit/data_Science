@@ -61,3 +61,6 @@ df=df[df['country'].isin(['United States','India','Brazil','Indonesia','China'])
 df.plot(kind='scatter',x='year',y='population',s=80)
 plt.savefig('Scatter.png')
 plt.show()
+
+#exporting pivot table
+dfpop.to_excel('Pivot.xlsx')
