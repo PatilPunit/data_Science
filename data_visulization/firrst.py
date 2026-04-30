@@ -15,7 +15,7 @@ print(dfpop)
 
 dfpop5=dfpop[['United States','India','Brazil','Indonesia','China']]
 print(dfpop5)
-"""
+
 dfpop5.plot(kind='line',xlabel='Year',ylabel='Population',title='Population Growth (1920-2020)',figsize=(14,12))
 plt.show()
 
@@ -55,7 +55,6 @@ plt.show()
 dfpop5[['Indonesia','India']].plot(kind='hist')
 plt.show()
 
-"""
 
 df=df[df['country'].isin(['United States','India','Brazil','Indonesia','China'])]
 df.plot(kind='scatter',x='year',y='population',s=80)
