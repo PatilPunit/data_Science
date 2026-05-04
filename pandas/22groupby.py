@@ -49,3 +49,13 @@ print(vehicle)
 
 null_sum=df.isnull().sum()
 print(null_sum)
+
+#groupby with agg
+
+min_max=dfNum.groupby('Vehicle_type').agg(['min','max'])
+print(min_max)
+
+min_max=dfNum.groupby('Vehicle_type').agg(x=('Sales_in_thousands','min'),y=('Horsepower','max'))
+print(min_max)
+
+
