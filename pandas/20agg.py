@@ -20,3 +20,8 @@ print(dfmeancount2)
 print('_'*130)
 dfcol=dfmean.agg({'Sales_in_thousands':['sum','mean'],'Horsepower':['max','min']})
 print(dfcol)
+print('_'*130)
+print(df[['Sales_in_thousands','Price_in_thousands']].agg('sum',axis=1))
+
+#renaming index
+print(df.agg(x=('Sales_in_thousands','sum'),y=('Horsepower','mean')))
