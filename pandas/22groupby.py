@@ -8,3 +8,6 @@ df = pd.read_csv(path)
 print(df)
 
 df = df[['Manufacturer','Model','Sales_in_thousands','Vehicle_type','Price_in_thousands','Engine_size','Horsepower']]
+dfNum=df[['Sales_in_thousands','Vehicle_type','Price_in_thousands','Engine_size','Horsepower']]
+vehicle_avg=dfNum.groupby('Vehicle_type').mean()
+print(vehicle_avg)
