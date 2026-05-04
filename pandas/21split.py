@@ -10,6 +10,8 @@ pass_filter=df['Vehicle_type']=='Passenger'
 car_filter=df['Vehicle_type']=='Car'
 
 pass_avg=df[pass_filter] ['Sales_in_thousands'].mean()
-print(pass_avg)
 
+car_avg=df[car_filter] ['Sales_in_thousands'].mean()
 
+avg=pd.DataFrame({'Vehicle_type':['Car_average','Pass_average'],'Mean':[car_avg,pass_avg]})
+print(avg)
