@@ -43,3 +43,9 @@ vehicle=dfNum.groupby('Vehicle_type').value_counts()
 print(vehicle)
 vehicle=dfNum.groupby('Vehicle_type').count()
 print(vehicle)
+vehicle=dfNum.groupby('Horsepower',dropna=False).count()
+print(vehicle)
+#find null values
+
+null_sum=df.isnull().sum()
+print(null_sum)
