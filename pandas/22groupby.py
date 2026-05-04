@@ -11,3 +11,10 @@ df = df[['Manufacturer','Model','Sales_in_thousands','Vehicle_type','Price_in_th
 dfNum=df[['Sales_in_thousands','Vehicle_type','Price_in_thousands','Engine_size','Horsepower']]
 vehicle_avg=dfNum.groupby('Vehicle_type').mean()
 print(vehicle_avg)
+vehicle_avg=dfNum.groupby('Vehicle_type',as_index=False).mean()
+print(vehicle_avg)
+
+#the groupby method creates a group object
+group_obj=df.groupby('Manufacturer')
+print(group_obj)
+
