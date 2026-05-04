@@ -18,3 +18,14 @@ print(vehicle_avg)
 group_obj=df.groupby('Manufacturer')
 print(group_obj)
 
+#group attributes
+
+print(group_obj.groups)
+print('_'*130)
+print(group_obj.ngroups)
+print('_'*130)
+print(group_obj.groups.items())
+print('_'*130)
+print(group_obj.groups.keys())
+print('_'*130)
+print(group_obj.groups.pop('Acura'))
