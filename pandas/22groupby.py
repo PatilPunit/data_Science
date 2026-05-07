@@ -60,3 +60,6 @@ print(min_max)
 
 sum_vt=dfNum.groupby('Vehicle_type').sum() ['Sales_in_thousands']
 print(sum_vt)
+
+mean_vt=dfNum.groupby('Vehicle_type').mean() ['Sales_in_thousands']
+print(mean_vt)
