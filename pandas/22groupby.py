@@ -58,4 +58,5 @@ print(min_max)
 min_max=dfNum.groupby('Vehicle_type').agg(x=('Sales_in_thousands','min'),y=('Horsepower','max'))
 print(min_max)
 
-
+sum_vt=dfNum.groupby('Vehicle_type').sum() ['Sales_in_thousands']
+print(sum_vt)
