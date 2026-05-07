@@ -77,3 +77,12 @@ print(sales_th)
 
 sub_mean=dfNum.groupby('Manufacturer').apply(lambda x : x-x.mean()) ['Sales_in_thousands']
 print(sub_mean)
+
+#groupby with filter
+
+def filter_func(x):
+    return x['Sales_in_thousands'].sum() > 52
+
+filter1=dfNum.groupby('Manufacturer').filter(filter_func)
+print(filter1)
+print(filter1.shape)
