@@ -75,3 +75,5 @@ print(sales_th)
 sales_th=dfNum.groupby('Manufacturer').sum().apply(lambda x : x*1000) 
 print(sales_th)
 
+sub_mean=dfNum.groupby('Manufacturer').apply(lambda x : x-x.mean()) ['Sales_in_thousands']
+print(sub_mean)
