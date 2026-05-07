@@ -63,3 +63,15 @@ print(sum_vt)
 
 mean_vt=dfNum.groupby('Vehicle_type').mean() ['Sales_in_thousands']
 print(mean_vt)
+
+#groupby with lambda
+
+dfNum=df[['Sales_in_thousands','Manufacturer','Price_in_thousands','Engine_size','Horsepower']]
+
+sales_th=dfNum.groupby('Manufacturer').sum().apply(lambda x : x*1000) [['Horsepower','Sales_in_thousands']]
+print(sales_th)
+sales_th=dfNum.groupby('Manufacturer').sum().apply(lambda x : x*1000) [['Horsepower']]
+print(sales_th)
+sales_th=dfNum.groupby('Manufacturer').sum().apply(lambda x : x*1000) 
+print(sales_th)
+
