@@ -34,3 +34,15 @@ print(type(x))
 a,b,c=1,2,3
 print(a)
 
+x+=(4,)
+print(x)
+print(id(x))
+print(id(x))
+
+x = (1,2,3)
+
+print(id(x))
+
+x += (4,)
+
+print(id(x))
