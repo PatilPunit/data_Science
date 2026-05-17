@@ -46,3 +46,9 @@ print(id(x))
 x += (4,)
 
 print(id(x))
+
+x = tuple("Python")
+
+print(x)
+x=list('python')
+print(x)
