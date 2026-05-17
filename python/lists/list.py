@@ -30,3 +30,5 @@ print(lw)
 
 r=l*3
 print(r)
+
+print(l.pop())
