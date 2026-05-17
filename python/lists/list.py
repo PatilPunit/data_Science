@@ -30,15 +30,3 @@ print(lw)
 
 r=l*3
 print(r)
-
-a=l
-print(a)
-b=a
-b.append('hi')
-print(b)
-print(a)
-
-b=a.copy()
-print(a)
-b.append("dfghj")
-print(b)
