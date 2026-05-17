@@ -26,6 +26,8 @@ lw.remove(2)
 print(lw)
 lw.clear()
 print(lw)
+c= l.count(10)
+print(c)
 #repetation
 
 r=l*3
