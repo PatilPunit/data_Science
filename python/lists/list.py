@@ -43,3 +43,7 @@ print(l[::1])
 
 print(l.sort())
 print(l)
+a=[10]
+b=[10]
+print(b is a)
+print(b==a)
