@@ -31,14 +31,14 @@ print(lw)
 r=l*3
 print(r)
 
-print(l[-3:-1])
-print(l[1:3])
+a=l
+print(a)
+b=a
+b.append('hi')
+print(b)
+print(a)
 
-print(l)
-print(l[1:3])
-print(l[-4:-2])
-
-i=l.index(10)
-print(i)
-l.remove(3.14)
-print(l)
+b=a.copy()
+print(a)
+b.append("dfghj")
+print(b)
