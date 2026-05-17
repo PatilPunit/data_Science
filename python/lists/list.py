@@ -31,4 +31,9 @@ print(lw)
 r=l*3
 print(r)
 
-print(l.pop())
+#nested listing
+l =[[1,2,3,4],[6,7,8,9]]
+for i in l :
+    print(i)
+
+print(l[1][3])
