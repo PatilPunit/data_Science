@@ -37,3 +37,9 @@ for i in l :
     print(i)
 
 print(l[1][3])
+
+l=[1,2,56,21,54,91,0,8]
+print(l[::1])
+
+print(l.sort())
+print(l)
