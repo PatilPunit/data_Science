@@ -13,7 +13,7 @@ print(no)
 
 t=(1,2,3)
 t2=(4,5,6)
-tp=t+t2
+tp=t+t2 
 print(tp)
 
 #repetation
@@ -24,3 +24,12 @@ print(r)
 #membership
 
 print(1 in t)
+
+# tuple packing
+x =1,2,3
+print(x)
+print(type(x))
+
+# tuple unpacking
+a,b,c=1,2,3
+print(a)
