@@ -37,3 +37,8 @@ print(l[1:3])
 print(l)
 print(l[1:3])
 print(l[-4:-2])
+
+i=l.index(10)
+print(i)
+l.remove(3.14)
+print(l)
