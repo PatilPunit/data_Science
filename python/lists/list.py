@@ -30,3 +30,6 @@ print(lw)
 
 r=l*3
 print(r)
+
+print(l[-3:-1])
+print(l[1:3])
