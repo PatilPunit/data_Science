@@ -45,3 +45,9 @@ print(list(l))
 print(dict(l))
 
 print(tuple(l))
+
+x ='python'
+a=hash(x)
+print(a)
+
+print(int("10"))
