@@ -18,3 +18,7 @@ print(dt.date.month)
 print(dt.date.today())
 print(dt.date.year)
 
+import calendar
+
+print(calendar.isleap(2100))
+
