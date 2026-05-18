@@ -41,3 +41,22 @@ print(studw)
 
 del studw['age'] # delete value and key
 print(studw)
+
+
+dic = {1:'a',2:'b',3:'c',4:'d'}
+
+print(dic.values())
+print(dic.items())
+print(dic.keys())
+
+for i in dic:
+    print(i)
+
+for i in dic.values():
+    print(i)
+
+for i in dic.keys():
+    print(i)
+
+for i in dic.items():
+    print(i)
