@@ -62,4 +62,15 @@ for i,j in dic.items():
     print(i,j)
 
 dic.update({(1,2):'tuple',frozenset((1,2)):'fz'})
-dic.update({[1,2]:'list'})
+# dic.update({[1,2]:'list'})
+
+
+student = {
+    "name": "Jarad",
+    "marks": {
+        "math": 90,
+        "python": 95
+    }
+}
+
+print(student.get('marks','python'))
