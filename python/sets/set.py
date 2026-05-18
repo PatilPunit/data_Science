@@ -56,4 +56,10 @@ b = (1,2,3)
 
 print(a < b)
 
-dic={1:'a',2:'b'}
+dic={10:'a',20:'b'}
+x.update(dic)
+print(x)
+
+x = {1, True, 1.0}
+
+print(x)
