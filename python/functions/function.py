@@ -98,3 +98,14 @@ def test():
 x = test()
 
 print(x)
+
+x = 100
+
+def test():
+    
+    x = 50
+   
+
+test()
+print(x)
+
