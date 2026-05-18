@@ -51,3 +51,8 @@ a=hash(x)
 print(a)
 
 print(int("10"))
+
+l=[]
+print(bool("'False"))
+print(bool(0))
+print(bool(l))
