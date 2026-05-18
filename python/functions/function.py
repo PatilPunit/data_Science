@@ -91,3 +91,10 @@ print(oct(26))
 
 print(hash(True))
 print(hash(1))
+
+def test():
+    print(5)
+
+x = test()
+
+print(x)
