@@ -32,3 +32,16 @@ print(type(a))
 
 a = '10.7'
 print(type(float(a)))
+
+
+x = ["a","b","c"]
+y = [10,20,30]
+for i,v in enumerate(x):
+    print(i,v)
+
+l=zip(x,y)
+print(list(l))
+
+print(dict(l))
+
+print(tuple(l))
