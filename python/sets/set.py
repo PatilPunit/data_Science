@@ -44,3 +44,16 @@ sub={1,2,3,4}
 sup={1,2,3,4,5,6,7,8}
 print(sup.issubset(sub))
 print(sup.issuperset(sub))
+
+x = {1,2,3}
+x.add((4,5))
+
+print(x)
+
+
+a = (1,2)
+b = (1,2,3)
+
+print(a < b)
+
+dic={1:'a',2:'b'}
