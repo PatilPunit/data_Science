@@ -58,5 +58,8 @@ for i in dic.values():
 for i in dic.keys():
     print(i)
 
-for i in dic.items():
-    print(i)
+for i,j in dic.items():
+    print(i,j)
+
+dic.update({(1,2):'tuple',frozenset((1,2)):'fz'})
+dic.update({[1,2]:'list'})
