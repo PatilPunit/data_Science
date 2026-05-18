@@ -73,4 +73,4 @@ student = {
     }
 }
 
-print(student.get('marks','python'))
+print(student['marks']['python'])
