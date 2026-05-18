@@ -29,3 +29,6 @@ print(pow(1,2))
 a =  int(3.4)
 print(a)
 print(type(a))
+
+a = '10.7'
+print(type(float(a)))
