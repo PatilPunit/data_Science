@@ -56,3 +56,12 @@ l=[]
 print(bool("'False"))
 print(bool(0))
 print(bool(l))
+
+
+x = [3,1,2]
+l=[90,12,31,1]
+print(sorted(x))
+print(x)
+print(l.sort())
+print(l)
+
