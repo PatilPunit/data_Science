@@ -7,3 +7,14 @@ import math as m
 print(m.copysign(90.1,56.2))
 print(m.comb(90,87))
 
+import datetime as dt
+print(dt.date.ctime(dt.date(2025,9,2)))
+# print(dt.datetime.date(dt.date.day))
+print(dt.date.fromisocalendar(year=2020,week=33,day=4))
+print(dt.date.day)
+print(dt.date.fromtimestamp(2020))
+print(dt.date.isoweekday(dt.date(year=2020,month=12,day=5)))
+print(dt.date.month)
+print(dt.date.today())
+print(dt.date.year)
+
