@@ -35,7 +35,7 @@ class Test:
 
 a = Test(10)
 
-b = Test(10)
+b = a
 
 print(a == b)
 
