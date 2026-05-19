@@ -28,5 +28,16 @@ import calendar as cal
 
 print(cal.month(theyear=2020,themonth=1))
 
-import abc
+class Test:
+
+    count = 0
+
+    def __init__(self):
+       self.count += 1
+
+a = Test()
+b = Test()
+c = Test()
+
+print(a.count)
 
