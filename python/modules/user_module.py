@@ -30,14 +30,12 @@ print(cal.month(theyear=2020,themonth=1))
 
 class Test:
 
-    count = 0
+    def __init__(self,x):
+        self.x = x
 
-    def __init__(self):
-       self.count += 1
+a = Test(10)
 
-a = Test()
-b = Test()
-c = Test()
+b = Test(10)
 
-print(a.count)
+print(a == b)
 
