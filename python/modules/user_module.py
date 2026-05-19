@@ -28,17 +28,26 @@ import calendar as cal
 
 print(cal.month(theyear=2020,themonth=1))
 
-class Test:
+class A:
 
-    x = []
+    def show(self):
+        print("A")
 
-    def __init__(self):
-        self.x.append(1)
+class B(A):
 
-a = Test()
-b = Test()
-c = Test()
+    def show(self):
+        print("B")
 
-print(Test.x)
+class C(A):
+
+    def show(self):
+        print("C")
+
+class D(C,B):
+    pass
+
+x = D()
+
+x.show()
 
 
