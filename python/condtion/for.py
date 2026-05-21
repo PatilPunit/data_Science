@@ -14,12 +14,19 @@ x = 0
 while x < 5:
     x += 1
 
-    if x == 2:
-        continue
+#     if x == 2:
+#         continue
 
-    print(x)
+#     print(x)
 
-x = 1
+# x = 1
 
-while x < 10:
-    print(x)
+# while x < 10:
+#     print(x)
+
+print(2 ** 3 ** 2)
+
+x = [1,2]
+y = x
+
+print(x is y)
