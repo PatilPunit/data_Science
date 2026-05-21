@@ -36,3 +36,7 @@ x = 0
 while x < 3:
     print(x)
     x += 1
+x = [1,2,3]
+x.append([4,5])
+
+print(len(x))
