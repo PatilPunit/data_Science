@@ -43,7 +43,15 @@ print(len(x))
 
 
 a = [1,2]
-b = a.copy()
+b = a
 
 print(a is b)
 
+d = {"a":1, "b":2}
+
+print(d["a"])
+
+def test():
+    return
+
+print(test())
