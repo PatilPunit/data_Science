@@ -40,3 +40,10 @@ x = [1,2,3]
 x.append([4,5])
 
 print(len(x))
+
+
+a = [1,2]
+b = a.copy()
+
+print(a is b)
+
