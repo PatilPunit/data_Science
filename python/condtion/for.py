@@ -31,9 +31,8 @@ y = x
 
 print(x is y)
 
-for i in range(5):
+x = 0
 
-    if i == 2:
-        continue
-
-    print(i)
+while x < 3:
+    print(x)
+    x += 1
