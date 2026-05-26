@@ -94,9 +94,22 @@ import sys as s
 print(func(1))
 print(func(2))
 print(func(3, []))
-s.exit()
+
 import  os
 import random as rd
 
 l = [1,2,3,4,5]
 print(type(rd.shuffle(l)))
+
+
+import datetime as dt
+tday=dt.datetime.today()
+print(tday.month)
+
+print(dt.datetime.now())
+
+from datetime import datetime
+
+x = datetime(2025,1,1)
+
+print(x.strftime("%Y"))
