@@ -14,5 +14,49 @@ df_con_ver=pd.concat([df,dfq],axis=0)
 print(df_con_horz.shape)
 print(df_con_ver.shape)
 
-df.merge(dfq,on='ttid'how='inner')
+print(df.merge(how='inner',right=dfq))
 
+#concanate vertically
+
+print(pd.concat([df,dfq],ignore_index=True))
+
+df =df[['imdb_title_id','title','genre','country','year']]
+dfq=dfq[['imdb_title_id','total_votes','mean_vote']]
+
+df_sam=df.sample(frac=0.5)
+print(df)
+print(df.shape)
+print(df_sam.shape)
+
+print(pd.concat([df,df_sam],axis=0))
+
+df_innneer=df.merge(dfq,how='inner',on='imdb_title_id')
+df_oiter=df.merge(dfq,how='outer',on='imdb_title_id')
+print(df.shape)
+print(dfq.shape)
+print(df_innneer.shape)
+print(df_oiter.shape)
+
+#inner
+
+df_innneer=df.merge(dfq,how='inner',on='imdb_title_id')
+
+#exclusive inner
+df_innneer=df.merge(dfq,how='inner',on='imdb_title_id',indicator=True).query("_merge!='both'")
+print(df_innneer)
+
+#outer
+
+df_outer=df.merge(dfq,how='outer',on='imdb_title_id')
+
+#exclusive outer
+df_outer=df.merge(dfq,how='inner',on='imdb_title_id',indicator=True).query("_merge!='left'")
+print(df_outer)
+
+#outer
+
+df_outer=df.merge(dfq,how='outer',on='imdb_title_id')
+
+#exclusive outer
+df_outer=df.merge(dfq,how='inner',on='imdb_title_id',indicator=True).query("_merge!='left'")
+print(df_outer)
