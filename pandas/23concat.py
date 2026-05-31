@@ -50,13 +50,23 @@ print(df_innneer)
 df_outer=df.merge(dfq,how='outer',on='imdb_title_id')
 
 #exclusive outer
-df_outer=df.merge(dfq,how='inner',on='imdb_title_id',indicator=True).query("_merge!='left'")
+df_outer=df.merge(dfq,how='inner',on='imdb_title_id',indicator=True).query("_merge!='left' and _merge!='right'")
 print(df_outer)
 
-#outer
 
-df_outer=df.merge(dfq,how='outer',on='imdb_title_id')
 
-#exclusive outer
-df_outer=df.merge(dfq,how='inner',on='imdb_title_id',indicator=True).query("_merge!='left'")
-print(df_outer)
+#right
+
+df_right=df.merge(dfq,how='right',on='imdb_title_id')
+
+#exclusive right
+df_right=df.merge(dfq,how='right',on='imdb_title_id',indicator=True).query("_merge!='left'")
+print(df_right)
+
+#left
+
+df_left=df.merge(dfq,how='left',on='imdb_title_id')
+
+#exclusive left
+df_left=df.merge(dfq,how='inner',on='imdb_title_id',indicator=True).query("_merge!='right'")
+print(df_left)
