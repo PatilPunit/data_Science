@@ -15,5 +15,12 @@ for i in df :
 #dealing with missing data
 
 #drop columns
-df.drop('director',axis=1)
+# df.drop('director',axis=1,inplace=True)
+# print(df.isnull().sum())
+
+#drop row
+
+# no_direc=df[df['director'].isnull()].index
+# df.drop(no_direc,axis=0,inplace=True)
+# print(df.isnull().sum())
 
