@@ -24,3 +24,6 @@ for i in df :
 # df.drop(no_direc,axis=0,inplace=True)
 # print(df.isnull().sum())
 
+# ~
+
+# print(df[~(df['director'].isnull())].isnull().sum())
