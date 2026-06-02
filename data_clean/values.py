@@ -11,3 +11,9 @@ print(df.isnull().sum().sort_values(ascending=False))
 for i in df :
     per = df[i].isnull().mean()
     print(i + ' : ' +str(round(per*100)))
+
+#dealing with missing data
+
+#drop columns
+df.drop('director',axis=1)
+
