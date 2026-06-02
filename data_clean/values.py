@@ -27,3 +27,7 @@ for i in df :
 # ~
 
 # print(df[~(df['director'].isnull())].isnull().sum())
+
+#dropna()
+
+print(df.dropna(subset=['director']).isnull().sum())
