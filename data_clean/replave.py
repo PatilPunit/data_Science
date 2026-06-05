@@ -15,3 +15,7 @@ print(df['rating'].isnull().sum())
 df.fillna({'duration':'0'},inplace=True)
 print(df['duration'].isnull().sum())
 
+df['director']=df['director'].ffill(inplace=True)
+print(df['director'].isnull().sum())
+
+
