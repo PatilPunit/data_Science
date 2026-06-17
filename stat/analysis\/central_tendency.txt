@@ -1,0 +1,23 @@
+MEAN
+In statistics, mean (specifically the arithmetic mean) is a measure of central tendency representing the average value of a dataset.  It is calculated by summing all observations and dividing by the total number of observations. 
+
+Formula:  
+
+​
+where $\sum x$ is the sum of values and $n$ is the count.
+Symbol: Typically denoted by x̄ (x-bar) for sample means or μ (mu) for population means. 
+Context: Along with median and mode, it summarizes data distribution, though it is sensitive to extreme outliers. 
+
+
+MEDIAN
+The median in statistics is the middle value of a dataset when the numbers are arranged in ascending or descending order.  It serves as a measure of central tendency that is robust against outliers, making it a more accurate representation of the "center" than the mean for skewed distributions. 
+
+The median is the middle value of a dataset when arranged in ascending or descending order, effectively separating the higher half from the lower half. 
+
+Odd Number of Observations: The median is the single middle value. For the dataset {1, 3, 3, 6, 7, 8, 9}, the median is 6 (the 4th value). 
+Even Number of Observations: The median is the arithmetic mean of the two middle values. For the dataset {1, 2, 3, 4, 5, 6, 8, 9}, the two middle values are 4 and 5, so the median is 4.5
+
+MODE
+The mode in statistics is the value that appears most frequently in a data set, serving as one of the three primary measures of central tendency alongside the mean and median.  Unlike the mean and median, the mode can be applied to both numerical and categorical data, making it particularly useful for identifying the most common category or typical value in a distribution.  A data set may be unimodal (one mode), bimodal or multimodal (multiple modes), or have no mode if no values repeat. 
+
+Bimodal in statistics refers to a data distribution or probability distribution that exhibits two distinct peaks or modes, indicating the presence of two different subpopulations or underlying processes within the dataset.  Unlike a unimodal distribution which has a single center, a bimodal distribution shows that data clusters around two separate values or ranges that occur more frequently than others
