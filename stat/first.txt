@@ -1,0 +1,10 @@
+Data in statistics is a collection of raw facts, figures, or observations collected for analysis, interpretation, and decision-making.  It serves as the foundation for testing hypotheses, identifying patterns, and making evidence-based predictions. 
+
+Data is primarily classified into two broad categories:
+
+Qualitative Data (Categorical): Describes attributes or characteristics and is non-numeric. It includes Nominal data (categories without order, e.g., gender, eye color) and Ordinal data (categories with a natural rank, e.g., satisfaction levels, education levels). 
+
+Quantitative Data (Numerical): Represents measurable quantities and is numeric. It includes Discrete data (countable, distinct values like number of students) and Continuous data (measurable values within a range, like height or weight). 
+
+
+
