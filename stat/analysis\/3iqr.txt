@@ -1,0 +1,47 @@
+The Interquartile Range (IQR) tells us how spread out the middle 50% of the data is. It is less affected by extreme values and gives a better idea of how tightly or loosely the central data points are grouped. It is calculated using the first quartile (Q1) and third quartile (Q3).
+
+Focuses only on the central portion of the data.
+Not affected much by outliers, unlike the full range.
+Gives a clear view of how values are arranged around the median.
+Quartiles
+Quartiles divide the dataset into four equal parts:
+
+Q1 (First Quartile): Separates the lowest 25% of the data
+Q2 (Second Quartile / Median): Middle value of the dataset
+Q3 (Third Quartile): Separates the highest 25% of the data
+The IQR captures the range between Q1 and Q3, representing the middle 50% of the distribution.
+
+Formula of IQR
+The data is sorted in ascending order and split into 4 equal parts: Q1, Q2, Q3, called first, second, and third quartiles, respectively, in the given data.
+
+The IQR is simply the difference between the third quartile (Q3) and the first quartile (Q1), which is calculated as:
+
+Interquartile Range = Upper Quartile (Q3)– Lower Quartile(Q1)
+Interquartile Range = Upper Quartile (Q3)– Lower Quartile(Q1)
+
+It tells us how spread out the central 50% of the data is, which helps to gauge the data's variability without being influenced by outliers.
+
+How to Calculate the Interquartile Range
+Step 1: Sort the data in ascending order
+Step 2: Find the median (Q2)
+Step 3: Split the dataset into two halves
+
+Q1 = median of lower half
+Q3 = median of upper half
+Step 4: Calculate IQR
+
+IQR = Q3 - Q1
+
+Example
+Dataset: 77, 85, 92, 64, 78, 95, 82
+
+Sort the data: 64, 77, 78, 82, 85, 92, 95
+
+Median (Q2) = 82
+
+Lower half = 64, 77, 78
+
+Q1 is the median of the lower half (64, 77, 78) which is 77.
+Upper half = 85, 92, 95
+
+Q3 is the median of the upper half (85, 92, 95) which is 92.
