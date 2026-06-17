@@ -1,1 +1,9 @@
 A line graph (or line chart) is a statistical tool used to visualize how values change over a continuous interval, typically time, by connecting individual data points with straight line segments.  It displays the relationship between two variables: the independent variable (usually plotted on the horizontal x-axis, such as time) and the dependent variable (plotted on the vertical y-axis, such as quantity or percentage
+
+Trend Identification: The slope of the line clearly indicates whether the data is increasing, decreasing, or fluctuating over the observed period. 
+
+Continuous Data: Unlike bar graphs which compare discrete categories, line graphs are best for showing trends in continuous data, making them ideal for time series analysis. 
+
+Components: A standard line graph consists of a title, labeled axes with appropriate scales, data points (markers), and the connecting lines that illustrate the estimated values between those points. 
+
+Types: Common variations include simple line graphs (one variable), multiple line graphs (comparing multiple variables over the same time frame), and compound line graphs (stacking variables to show total quantities and their components).
