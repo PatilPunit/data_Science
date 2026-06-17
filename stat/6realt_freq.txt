@@ -1,0 +1,2 @@
+elative frequency in statistics is the proportion or percentage of times a specific value or category appears in a dataset, calculated by dividing the absolute frequency of that value by the total number of observations. 
+
