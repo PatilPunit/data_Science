@@ -1,0 +1,7 @@
+A histogram is a graphical representation of the distribution of continuous numerical data, where values are grouped into adjacent intervals called bins or classes.  Unlike bar charts, which represent categorical data with gaps between bars, histograms use touching rectangular bars to illustrate the frequency or count of data points within each specific range. 
+
+Key characteristics and uses include:
+
+Visualizing Distribution: It reveals the shape, center, and spread of a dataset, helping to identify patterns such as normality, skewness (left or right), or modality (unimodal, bimodal). 
+Data Inspection: Histograms are essential for detecting outliers, gaps, and variations in data, making them a fundamental tool in statistical quality control and exploratory data analysis. 
+Construction: The horizontal axis displays the continuous variable (e.g., age, weight, temperature), while the vertical axis shows the frequency or relative frequency of observations falling within each bin
