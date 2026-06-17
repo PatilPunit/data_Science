@@ -9,3 +9,6 @@ Structure: One axis displays the categories, while the other shows the numerical
 Variations: Includes vertical (column) charts, horizontal charts, grouped charts, and stacked charts to handle multiple data points or hierarchical data. 
 
 Distinction: Unlike histograms, which show the distribution of continuous data with touching bars, bar graphs are designed for separate, non-continuous categories.
+
+A frequency table is a statistical tool that organizes data by listing values or categories alongside the number of times each occurs, known as the frequency.  It summarizes the distribution of a dataset, making it easier to identify patterns, trends, and the most common or rare values. 
+
