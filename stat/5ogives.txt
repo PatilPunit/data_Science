@@ -1,0 +1,9 @@
+Cumulative frequency is a statistical measure representing the running total of frequencies in a dataset.  It indicates the number of observations that fall below or equal to a specific value, calculated by adding each class frequency to the sum of all preceding frequencies
+
+In statistics, an ogive (also known as a cumulative frequency polygon or curve) is a line graph that displays the cumulative frequency distribution of a dataset.  It plots data values on the horizontal axis against cumulative frequencies, relative frequencies, or percent frequencies on the vertical axis, allowing analysts to estimate how many observations fall below or above a specific value. 
+
+There are two primary types of ogives, each serving a distinct analytical purpose:
+
+Less Than Ogive: An increasing curve that plots cumulative frequencies against the upper class boundaries.  It shows the total number of data points that are less than or equal to a specific value, rising from left to right.
+
+More Than Ogive: A decreasing curve that plots cumulative frequencies against the lower class boundaries.  It shows the number of data points greater than or equal to a specific value, falling from left to right. 
