@@ -1,0 +1,9 @@
+A joint distribution describes the probability that two or more random variables occur simultaneously, capturing their relationships and dependencies.  It assigns a probability to each possible combination of outcomes for a set of variables, allowing for the analysis of how they interact within a given context. 
+
+Key Characteristics :- 
+
+Representation: For discrete variables, it uses a joint probability mass function (pmf), often displayed in a table.  For continuous variables, it uses a joint probability density function (pdf), where the total integral equals 1. 
+
+Marginal Distributions: Individual probability distributions for single variables can be derived from the joint distribution by summing (discrete) or integrating (continuous) over the other variables. 
+
+Conditional Distributions: These provide the probability of one variable given specific values of others, derived directly from the joint distribution. 
