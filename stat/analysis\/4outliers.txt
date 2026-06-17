@@ -1,0 +1,215 @@
+Outliers stand for data points that are indicative of a much higher variability than other observations in a given dataset. This can result in skewing statistical studies and wrong conclusions after all the variables are not adequately identified and handled. Identifications of outliers are very relevant for the financial sector, healthcare industry and decision-making processes that depend on data analysis.
+
+In this article, we will learn in detail about outlier, its definition, examples, types, how to find outlier, their uses and how they are different of inliers.
+
+Outlier
+What is Outlier?
+An outlier is also a data point that is drastically different from the other records in the dataset, with the differences being either too high or too low when compared to the rest of the observations. These extreme values are one of the reasons why giving out correct results based on the prepared analysis may be out of order if the statistical values aren’t precisely identified and addressed. Outliers may occur as a result of different reasons, e.g., measurement error, experimental variability, or genuine anomalies in the data.
+
+Outlier-copy
+Outlier finding plays an important role on all levels and in any case, where the accuracy and objectivity of statistical conclusions are of great importance. Much like the interquartile range (IQR), Z-score formulas are generally employed to locate outliers, thus giving the analysts an insight into the data's distinctive features and allowing them to come up with enlightened decisions based on the trusted data.
+
+Definition of Outlier
+An outlier is a data point that lies outside the overall pattern of a dataset, significantly differing from other observations.
+
+
+
+Outlier Examples
+Example 1: Dataset: 10, 12, 14, 16, 18, 500
+
+Solution:
+
+Outlier Calculation: Using the IQR method,
+
+
+
+Q1 = 12, Q3 = 18
+
+
+
+IQR = Q3 - Q1 = 6
+
+
+
+Lower Bound = Q1 - 1.5 * IQR = 3
+
+
+
+Upper Bound = Q3 + 1.5 * IQR = 27
+
+
+
+The value 500 is an outlier.
+
+
+
+Example 2: Dataset: 20, 22, 24, 26, 28, 30
+
+Solution:
+
+Outlier Calculation: Using Z-score,
+
+
+
+Mean = 25, Standard Deviation = 4
+
+
+
+Z-score for 30 = (30 - 25) / 4 = 1.25
+
+
+
+The value 30 is not an outlier.
+
+
+
+Types of Outlier
+Outliers can be categorized as extreme and mild based on their deviation from the dataset's central tendency.
+
+Extreme Outlier
+Data points that lie far from the mean or median, typically beyond 3 times the interquartile range (IQR).
+
+Formula: 
+
+Outlier = Q3 + 3 × IQR
+
+
+
+Example:
+
+In a dataset with Q3 = 20, Q1 = 10, and IQR = 10, an extreme outlier would be any value above 50.
+
+
+
+Mild Outlier
+Data points that are moderately different from the rest of the data, falling between 1.5 to 3 times the IQR from the quartiles.
+
+Formula: 
+
+Outlier = Q3 + 1.5 × IQR
+
+
+
+Example:
+
+In the same dataset, a mild outlier would fall between 20 and 35.
+
+
+
+How to Find Outliers?
+To identify outliers in a dataset, you can use the following two methods:
+
+Turkey Method
+Interquartile Range Method
+How to Find Outliers Using the Tukey Method
+The Tukey method, also known as the Fences method, is a statistical technique for identifying outliers in a dataset. It uses the interquartile range (IQR) to determine the lower and upper bounds for outliers.
+
+To find outliers using the Tukey method:
+
+Calculate the first quartile (Q1) and third quartile (Q3) of the dataset.
+
+Calculate the interquartile range (IQR):
+
+IQR = Q3 - Q1
+Determine the lower and upper bounds for outliers:
+
+Lower Bound = Q1 - 1.5 × IQR
+Upper Bound = Q3 + 1.5 × IQR
+Identify Outliers:
+
+Any data point below the lower bound or above the upper bound is considered an outlier.
+Example:
+
+Let's find the outliers in the following dataset using the Tukey method: 10, 12, 14, 16, 18, 500
+
+Calculate Quartiles:
+
+
+
+Q1 = 12, Q3 = 18
+Calculate IQR:
+
+
+
+IQR = Q3 - Q1 =18−12=6
+Determine Outlier Bounds:
+
+
+
+Lower Bound: Q1 - 1.5 × IQR=12−1.5×6=3
+Upper Bound: Q3 + 1.5 × IQR=18+1.5×6=27
+Identify Outliers: 
+
+
+
+The value 500 is above the upper bound of 27, so it is considered an outlier.
+By using the Tukey method, we identified that the value 500 is an outlier in the given dataset.
+
+
+
+How to Find Outliers Using the Interquartile Range (IQR) Method
+The interquartile range (IQR) method is another statistical technique for identifying outliers in a dataset. It uses the IQR to determine the lower and upper bounds for outliers.
+
+To find outliers using the IQR method:
+
+Calculate the first quartile (Q1) and third quartile (Q3) of the dataset.
+
+Calculate the interquartile range (IQR):
+
+IQR = Q3 - Q1
+Determine the lower and upper bounds for outliers:
+
+Lower Bound = Q1 - 1.5 × IQR
+Upper Bound = Q3 + 1.5 × IQR
+Identify Outliers:
+
+Any data point below the lower bound or above the upper bound is considered an outlier.
+Example:
+
+Let's find the outliers in the following dataset using the IQR method: 10, 12, 14, 16, 18, 500
+
+Calculate Quartiles:
+
+
+
+Q1 = 12, Q3 = 18
+Calculate IQR:
+
+
+
+IQR = Q3 - Q1 =18−12=6
+Determine Outlier Bounds:
+
+
+
+Lower Bound: Q1 - 1.5 × IQR = 12−1.5×6=3
+Upper Bound: Q3 + 1.5 × IQR =18+1.5×6=27
+Identify Outliers: 
+
+
+
+The value 500 is above the upper bound of 27, so it is considered an outlier.
+By using the IQR method, we identified that the value 500 is an outlier in the given dataset
+
+
+
+Causes of Outliers
+There are four main causes of outliers in a dataset:
+
+Data Entry Errors
+Mistakes can occur during the data collection or recording process, leading to erroneous values that deviate significantly from the rest of the data. These errors can include typos, incorrect measurements, or unintended mutations of the dataset. For example, a height of 6 feet is recorded as 16 feet due to a data entry error.
+
+Sampling Variability
+Natural variations in samples can sometimes result in outliers. If a study accidentally obtains an item or person that is not from the target population, it can lead to unusual values in the dataset. This can happen due to unusual events, or characteristics, or if the experimenter measures the item or subject under abnormal conditions. For instance, in a study of average giraffe height, a sample might include a few unusually short or tall individuals due to natural variation.
+
+Measurement Errors
+Inaccuracies in measurement instruments can cause outliers. These errors can arise from the data extraction process, experiment planning, or execution. Faulty equipment, improper calibration, or environmental factors can lead to measurements that are significantly different from the true values. An example would be a malfunctioning thermometer recording temperatures that are much higher or lower than the actual temperatures.
+
+Genuine Anomalies
+In some cases, outliers can represent true unexpected values in the data that are not due to errors or variability. These are known as genuine anomalies or novelties. They can provide valuable insights into the subject area and may indicate new phenomena or patterns that warrant further investigation. However, it is essential to ensure that these outliers are not the result of any of the other causes mentioned above.
+
+Uses of Outliers
+Anomaly Detection: Identifying unusual patterns in data.
+Quality Control: Monitoring for defects or irregularities.
+Financial Analysis: Detecting fraudulent activities or unusual transactions.
+Predictive Modeling: Improving model accuracy by handling outliers appropriately.
