@@ -1,0 +1,11 @@
+The five-number summary is a set of five descriptive statistics that provide a concise overview of a dataset's distribution, consisting of the minimum, first quartile (Q1), median (Q2), third quartile (Q3), and maximum.  These values describe the center, spread, and range of the data, making it particularly useful for identifying skewness and outliers. 
+
+To illustrate, consider the dataset: 3, 7, 8, 5, 12, 14, 21, 15, 18, 14.
+
+Order the data: 3, 5, 7, 8, 12, 14, 14, 15, 18, 21. 
+Minimum: The smallest value is 3. 
+Maximum: The largest value is 21. 
+Median (Q2): With 10 values, the median is the average of the 5th and 6th values: $(12 + 14) / 2 = \mathbf{13}$. 
+First Quartile (Q1): The median of the lower half (3, 5, 7, 8, 12) is 7.
+Third Quartile (Q3): The median of the upper half (14, 14, 15, 18, 21) is 15. 
+The five-number summary for this dataset is {3, 7, 13, 15, 21}.  This summary is often visualized using a boxplot, where the box spans from Q1 to Q3 with a line at the median, and whiskers extend to the minimum and maximum values
