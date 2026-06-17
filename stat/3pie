@@ -1,0 +1,10 @@
+A pie chart is a circular statistical graphic divided into slices to illustrate numerical proportions, where the arc length, central angle, and area of each slice are proportional to the quantity it represents.  It is primarily used to visualize the parts-to-a-whole relationship for categorical data, with the entire circle representing 100% of the total data set.
+
+Angle Calculation: Each slice's angle is calculated using the formula Angle=(Category Value/Total Value)×360 
+∘
+  .
+Best Use Cases: Pie charts are most effective for displaying a small number of categories and providing a general sense of relative contributions, such as market share or budget distribution. 
+
+Limitations: They are generally discouraged for precise comparisons, datasets with many categories, or continuous data, as human vision is better at comparing lengths (bar charts) than angles and areas. 
+
+Variants: Common variations include doughnut charts (with a central hole for additional info), exploded pie charts (to highlight specific slices), and 3D pie charts (often criticized for distorting perception)
