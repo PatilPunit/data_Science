@@ -1,0 +1,20 @@
+A density curve is a smoothed, idealized graph that represents the probability distribution of a continuous variable. Unlike a histogram, it shows the relative frequency of outcomes over an infinite number of intervals, where the total area underneath the curve is exactly 1 (or 100%).
+
+Core Properties of Density CurvesTotal Area:
+The area under the curve always equals 
+Areas under specific sections of the curve represent the probability of those outcomes occurring.
+No Negative Values: The curve never drops below the horizontal \(x\)-axis, meaning probabilities can never be negative.
+
+Mean vs. Median
+
+The shape of the curve dictates where the measures of center lie:
+
+Symmetric Curves (e.g., Normal Distribution): The mean and the median are identical and sit exactly in the center of the distribution.
+
+Skewed Curves: The median divides the area under the curve exactly in half (50% above, 50% below). The mean is pulled toward the "tail" of the skew (e.g., if the tail stretches to the right, the mean will be greater than the median).
+
+Estimating Standard Deviation (Normal Curve)For a classic bell-shaped (normal) density curve, the standard deviation is the measure of the curve's spread:
+
+Empirical Rule: Approximately 68% of the data falls within \(1\) standard deviation of the mean, 95% falls within \(2\) standard deviations, and 99.7% within \(3\) standard deviations.
+
+Points of Inflection: Visually, the standard deviation corresponds to the points on the curve where the slope transitions from concave down to concave u
