@@ -1,6 +1,34 @@
+In statistics, the empirical rule (or 68-95-99.7 rule) dictates how data is dispersed around the mean in a normal distribution (bell curve). It reveals how standard deviations—represented by z-scores—correspond to the percentage of total data.
+
+A z-score measures exactly how many standard deviations a specific data point lies above or below the mean.
+
+The empirical rule breaks this down as follows:
+
+~68% of data falls within \(1\) standard deviation of the mean (Z-scores between \(-1\) and \(1\)).
+~95% of data falls within \(2\) standard deviations of the mean (Z-scores between \(-2\) and \(2\)).
+~99.7% of data falls within \(3\) standard deviations of the mean (Z-scores between \(-3\) and \(3\)).
+
+Breaking Down the Z-Score Intervals
+
+To visualize the spread of the curve, these percentages are distributed symmetrically:
+
+Mean to Z-score 
+\(1\): \(34\%\)Z-score 
+\(1\) to Z-score \(2\): \(13.5\%\)Z-score 
+\(2\) to Z-score \(3\): \(2.35\%\)
+
+Why It Matters 
+Identifying Outliers: Data points with a z-score beyond \(\pm 3\) represent extreme outliers, as they make up only \(0.3\%\) of the total distribution.
+Standardization: Converting raw data into z-scores allows you to compare different data sets (e.g., comparing test scores from two entirely different classes) on a standard scal
+
+
+
 A z-score (or standard score) tells you how many standard deviations a data point is from the mean of a dataset. 
 It indicates whether a specific score is typical or unusual, and allows you to compare data points from entirely different datasets.
-The Basics Positive z-score: The data point is above the mean.
+
+The Basics 
+
+Positive z-score: The data point is above the mean.
 Negative z-score: The data point is below the mean.
 Zero z-score: The data point is exactly equal to the mean.
 
