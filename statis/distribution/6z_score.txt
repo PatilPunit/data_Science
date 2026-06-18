@@ -1,0 +1,11 @@
+A z-score (or standard score) tells you how many standard deviations a data point is from the mean of a dataset. 
+It indicates whether a specific score is typical or unusual, and allows you to compare data points from entirely different datasets.
+The Basics Positive z-score: The data point is above the mean.
+Negative z-score: The data point is below the mean.
+Zero z-score: The data point is exactly equal to the mean.
+
+For example, if you take an exam and get a z-score of \(1.5\), your score is \(1.5\) standard deviations above the class average.
+
+How to Calculate ItYou can calculate a z-score using the following formula:
+
+\(z = \frac{x - \mu}{\sigma}\)\(z\) = Z-score\(x\) = Your data point or raw score\(\mu \) = The population mean (average)\(\sigma \) = The population standard deviation
