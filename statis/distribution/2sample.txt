@@ -1,0 +1,33 @@
+In statistics, population and sample are fundamental concepts used to describe groups of data:
+
+A population refers to the entire set of individuals, objects, or data points that you want to study. It can be large or small depending on the scope of your research.
+
+For example, all students in a school or all people in a country.
+It provides a complete picture and is usually denoted by N.
+Click to enlarge
+A sample is a subset of the population that is selected for analysis. It's used when studying the entire population is impractical or impossible. Sampling allows for inferences about the population using statistical techniques.
+
+For example, if the population is all students in a school, a sample could be 50 students randomly chosen from different classes to participate in a survey.
+It offers an estimate and is denoted by n.
+Parameters (like population mean) describe the population, while statistics (like sample mean) describe the sample. Sampling enables us to make inferences about the population using statistical techniques.
+
+Collecting Data From the Population and Sample
+When to use a Population:
+
+Populations are used when your research question requires it, or when you have access to data from every member of the population. Usually, it is only straightforward to collect data from a whole population when it is small, accessible and cooperative.
+
+Example:
+
+A marketing manager at a small local bakery wants to understand customer preferences.
+They collect data on every customer’s bread purchase over a month.
+Since the customer base is limited and accessible, they analyze the entire population to identify trends.
+When to use a Sample:
+
+When your population is large in size, geographically dispersed, or difficult to contact, it’s necessary to use a sample. With statistical analysis, you can use sample data to make estimates or test hypotheses about population data.
+
+Example:
+
+You're researching smartphone usage among teenagers in a city.
+The population includes all teenagers aged 13–18, which could be tens of thousands.
+You select a random sample of 500 teens from different schools.
+This sample participates in surveys to provide insights into broader usage patterns.
