@@ -1,0 +1,42 @@
+Variance is a statistical measure of how far a set of numbers is spread out from their average value (mean).  In Python, it is commonly calculated using the built-in statistics module for samples or numpy for arrays. 
+
+How to calculate Variance :
+
+1. Find mean
+2. Then substract every point from each point and mean and squaring them
+3. Then divide the computed diffrence from number of points
+
+
+Standard deviation is a statistical metric that measures how spread out data points are from their average (mean). A low standard deviation means data is tightly clustered near the mean, while a high standard deviation indicates data is spread over a wider range.
+
+To understand the core components of the statistic, the methodology, and how it is applied, it helps to break down the concept further.
+
+Core Concepts
+
+Mean: The average of all numbers in the dataset.
+Variance: The average of the squared differences from the mean.
+Standard Deviation: The square root of the variance. By using the square root, the standard deviation is brought back to the same unit of measurement as the original data, making it much easier to interpret.
+
+How Standard Deviation Works (Step-by-Step)
+For a simple set of numbers, here is how you calculate the standard deviation manually:
+
+1.Calculate the mean: Add all numbers in your dataset and divide by the total count of numbers.
+2.Find the deviation: Subtract the mean from each individual number in the dataset.
+3.Square the deviations: Multiply each of those differences by itself to remove any negative numbers.
+4.Find the variance: Add all the squared differences together and divide by the number of data points.
+5.Calculate the standard deviation: Take the square root of that variance.
+
+Understanding the Formulas
+There are two main variations of the standard deviation formula depending on whether you are analyzing a whole group or just a piece of it:Population Standard Deviation: Used when you have data for every single member of an entire population.
+
+\(\sigma = \sqrt{\frac{\sum (x - \mu)^2}{N}}\)
+
+Sample Standard Deviation: Used when you are working with a smaller sample meant to represent a larger population. Notice it divides by n - 1 (known as Bessel's correction) to prevent underestimating the true variability.
+
+\(s = \sqrt{\frac{\sum (x - \bar{x})^2}{n - 1}}\)
+
+The Bell Curve Rule (Normal Distribution)When data is distributed symmetrically in a "bell curve," the standard deviation follows a very specific and predictable pattern known as the 68-95-99.7 rule:~68.3% of the data falls within 1 standard deviation of the mean.~95.5% of the data falls within 2 standard deviations of the mean.~99.7% of the data falls within 3 standard deviations of the mean.
+
+Real-World ApplicationsFinance: 
+
+Investors and analysts use it as a measure of volatility. A high standard deviation means an asset experiences wild price swings (higher risk), while a low standard deviation indicates steadier, more predictable performance.Manufacturing: It is used to monitor quality control and operational variability, ensuring products are made to consistent standards.Healthcare & Weather: Used to track distributions like typical human heights or average temperature anomalies over time
