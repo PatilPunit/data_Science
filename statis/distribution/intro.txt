@@ -1,0 +1,3 @@
+n statistics, a distribution describes how the values of a variable are spread across all possible outcomes, showing which values occur more or less frequently.  It can be represented as a frequency distribution (summarizing actual observed data) or a probability distribution (a mathematical model predicting the likelihood of outcomes). 
+
+A common example is the Uniform Distribution when rolling a fair six-sided die.  Here, each outcome (1 through 6) has an equal probability of 1/6.  Another example is the Normal Distribution (bell curve), which models natural phenomena like human heights, where most values cluster around the mean and probabilities decrease as you move away from the center. 
