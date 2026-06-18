@@ -1,0 +1,7 @@
+In statistics, probability is the mathematical measure of the likelihood that a specific event will occur. It quantifies uncertainty, allowing you to predict patterns in data, make informed decisions, and understand the risks associated with random events
+
+Probabilities are always expressed as a number between 0 and 1 or 0% to 100%
+
+Sample Space: The complete set of all possible outcomes in an experiment (e.g., for a coin flip, the sample space is {Heads, Tails}).
+Event: A specific subset of the sample space you are measuring (e.g., the coin landing on Heads).
+Independent Events: When the outcome of one event does not affect the probability of another (e.g., rolling a die twice)
