@@ -5,3 +5,5 @@ Probabilities are always expressed as a number between 0 and 1 or 0% to 100%
 Sample Space: The complete set of all possible outcomes in an experiment (e.g., for a coin flip, the sample space is {Heads, Tails}).
 Event: A specific subset of the sample space you are measuring (e.g., the coin landing on Heads).
 Independent Events: When the outcome of one event does not affect the probability of another (e.g., rolling a die twice)
+
+In probability and statistics, an event is a specific outcome or a set of outcomes from a random experiment (a subset of the overall sample space). Events are broadly classified by how their outcomes occur, their likelihood, and their relationship to one another
