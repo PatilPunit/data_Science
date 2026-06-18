@@ -104,3 +104,12 @@ Key Features
 Median is less than mean.
 Data clusters towards the right of the plot.
 Right-skewness can cause over-prediction of upper extremes.
+
+
+Every Skew has :
+
+Mean at the tail 
+Median at the  middle
+Mode at the start
+
+And obvioulsy skewed curve created byt the existnce of outliers in the data
