@@ -1,0 +1,9 @@
+The Gaussian distribution, commonly known as the normal distribution, is a continuous probability distribution characterized by a symmetric, bell-shaped curve.
+
+It is entirely defined by two parameters: the mean (average) and the variance (spread).
+
+Most values cluster around the center, with extreme values tapering off symmetrically.
+
+Core Characteristics Symmetry: The mean, median, and mode are all equal and sit at the exact center of the distribution.
+
+The Empirical Rule (68-95-99.7): In a standard Gaussian distribution:68.2% of the data falls within ± 1 standard deviation of the mean.95.4% falls within ± 2 standard deviations.99.7% falls within ± 3 standard deviations.

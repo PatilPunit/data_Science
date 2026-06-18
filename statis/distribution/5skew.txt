@@ -1,0 +1,106 @@
+Skewness is a statistical measure that describes the degree of asymmetry observed in a probability distribution of data. It is important to understand skewness of data for accurate model making especially for algorithms that expect a symmetric or normal data distribution. Skewness affects statistical metrics like mean and variance.
+
+Skewness Measurement
+The formula for skewness is:
+
+Skewness
+=
+n
+(
+n
+−
+1
+)
+(
+n
+−
+2
+)
+∑
+i
+=
+1
+n
+(
+x
+i
+−
+x
+‾
+s
+)
+3
+Skewness= 
+(n−1)(n−2)
+n
+​
+ ∑ 
+i=1
+n
+​
+ ( 
+s
+x 
+i
+​
+ − 
+x
+ 
+​
+ ) 
+3
+ 
+
+Where:
+
+n
+n is the number of data points,
+x
+i
+x 
+i
+​
+ is each individual data point,
+x
+‾
+x
+  is the mean of the dataset,
+s
+s is the standard deviation of the dataset.
+When the data is computed using the above formula the result would tell which type of skewness is present.
+
+A skewness value of 0 indicates that no skewness is present i.e normal distribution.
+Positive skewness will indicate a right-skewed distribution
+Negative skewness will indicate a left-skewed distribution.
+It is important to understand the difference between left-skewed and right-skewed distributions when analysing data as the direction of skewness impacts statistical measures and model performance.
+
+1. Left-Skewed Distribution
+A left-skewed distribution has longer tail on the left side when compared to right side which means that the concentration of data points is more towards the higher values and the lower values (extreme outliers) drags the tail towards the left.
+
+For example, in income distribution it is often seen that most people earn average or higher wages whereas a few individuals earn extremely low wages which results in left-skewed data samples.
+
+left-skew-right-skew-12
+Left-skewed Distribution
+
+
+Mean vs Median: In left-skewed distributions the mean is less than the median. The extreme low values (outliers) pull the mean towards the left.
+Visual Indicator: In a plot you will typically see data clustered to the right side with the left tail extending further.
+Key Features
+
+Mean is less than median.
+Data clusters towards the right of the plot.
+Left-skewness can cause under-prediction of lower extremes.
+2. Right-skewed Distribution
+A right-skewed distribution has longer tail on the right side when compared to the left side which states that the concentration is more towards the lower values and the extreme high values (outliers) drag the tail towards the right.
+
+For example, most houses may have similar prices but a few can have extremely high-end which would result in a right-skewed distribution.
+
+left-skew-right-skew-1
+Right-skewed Distribution
+Mean vs Median: In right-skewed distributions the mean is greater than the median. The extreme high values pull the mean to the right.
+Visual Indicator: In a plot you will typically see data clustered to the left side, with the right tail extending further.
+Key Features
+
+Median is less than mean.
+Data clusters towards the right of the plot.
+Right-skewness can cause over-prediction of upper extremes.
