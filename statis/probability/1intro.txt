@@ -7,3 +7,29 @@ Event: A specific subset of the sample space you are measuring (e.g., the coin l
 Independent Events: When the outcome of one event does not affect the probability of another (e.g., rolling a die twice)
 
 In probability and statistics, an event is a specific outcome or a set of outcomes from a random experiment (a subset of the overall sample space). Events are broadly classified by how their outcomes occur, their likelihood, and their relationship to one another
+
+1. Simple vs. Compound Events
+
+Simple Event: Contains exactly one single outcome from the sample space. For example, rolling a die and getting exactly a \(4\).
+
+Compound Event: Contains more than one single outcome. For example, rolling an even number on a die—getting a \(2\), \(4\), or \(6\).
+
+2. Independent vs. Dependent Events
+
+Independent Events: The occurrence of one event has absolutely no effect on the probability of the other. For example, flipping a coin and rolling a die, or drawing a card, replacing it, and drawing again.
+
+Dependent Events: The occurrence of one event directly changes the probability of the other event. A classic example is drawing a card from a deck and drawing a second card without replacing the first one.
+
+3. Mutually Exclusive vs. Exhaustive Events
+
+Mutually Exclusive (Disjoint) Events: Two events that cannot occur at the same time. If one happens, the other cannot. For example, getting both a Heads and a Tails on a single coin flip.
+
+Exhaustive Events: A set of events that together make up the entire possible set of outcomes. For instance, the events "rolling an even number" and "rolling an odd number" on a six-sided die cover every possible outcome.
+
+4. Special Event Classifications Sure (Certain) Event: An event that is guaranteed to happen, with a probability of \(1\). For example, rolling a number less than \(7\) on a standard six-sided die.
+
+Impossible Event: An event that can never occur, with a probability of \(0\). For example, rolling an \(8\) on a standard six-sided die.
+
+Complementary Event: The exact opposite of an event occurring. If event \(A\) is rolling a \(3\) on a die, the complement (often written as \(A^{\prime }\) or \(A^{c}\)) is rolling anything other than a \(3\). The sum of probabilities for an event and its complement is always \(1\).
+
+Equally Likely Events: Events that have the exact same chance of occurring. For example, on a fair die, rolling a \(1\), \(2\), \(3\), \(4\), \(5\), or \(6\) are all equally likely events
