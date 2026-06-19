@@ -1,0 +1,84 @@
+1.Addition Rule
+
+A given event's Probability measures how likely it is to occur. It is used to describe and analyze uncertainty in everyday situations and games of chance.
+
+P(E)=Number of favorable outcomes
+Total number of outcomes
+P(E)= 
+Total number of outcomes
+Number of favorable outcomes
+​
+  
+
+The addition rule of probability is used to find the probability that at least one of two events occurs. For any two events A and B, it is given by:
+
+P(A or B) = P(A) + P(B) − P(A and B) 
+
+image
+Probability with Venn Diagrams
+Mutually Exclusive Events
+Two events, A and B, are said to be mutually exclusive if they cannot occur simultaneously during a single trial.
+
+Example: In a coin toss, the events "Getting Heads" and "Getting Tails" are mutually exclusive because both cannot happen at the same time.
+
+Venn Diagram: Mutually exclusive events are represented as non-overlapping circles in a Venn diagram since there is no intersection between the two events.
+
+Click to enlarge
+
+Addition Rule: Since P(A ∩ B) = 0 (no overlap), the formula simplifies to: P(A ∪ B) = P(A) + P(B) 
+Here:
+
+P(Getting Heads) = 1/2,
+P(Getting Tails) = 1/2,
+P(Getting Heads or Tails) = 1/2 + 1/2 = 1
+When the probabilities of all possible events in a sample space are added, their sum is equal to 1.
+
+Non-Mutually Exclusive Events
+Two events, A and B, are said to be non-mutually exclusive if they can occur simultaneously during a single trial.
+
+Example: Rolling a die, let A represent rolling an odd number ({1, 3, 5}) and B represent rolling a 3 ({3}). In this case, the number 3 belongs to both events, meaning A and B overlap.
+
+Venn Diagram: Non-mutually exclusive events are represented as overlapping circles in a Venn diagram, with the shared outcomes placed in the intersection.
+
+The two circles representing Event A ({1, 3, 5}) and Event B ({3}) intersect, showing an overlap at 3.
+Click to enlarge
+
+Addition Rule: P(A ∪ B) = P(A) + P(B) − P(A ∩ B)
+Here:
+
+P(A): Probability of rolling an odd number = 3/6 = 1/2,
+P(B): Probability of rolling a 3 = 1/6​,
+P(A ∩ B): Probability of rolling a number that is both odd and 3 = 1/6.
+Substitute into the formula: P(A ∪ B) = 1/2 + 1/6 − 1/6 = 1/2.
+
+Adding Probabilities 
+In probability theory, when you add the probabilities of all possible outcomes, the sum always equals 1. This is a result of the fact that one of the possible outcomes must occur.
+Example: If a trial has three possible outcomes, A, B, and C. 
+
+P(E1) + P(E2) + ... + P(En)= 1
+
+Elementary Events
+Sometimes we have only one outcome in which we are interested. Let's say 8 teams are participating in the cricket World Cup. We are interested in finding the probability of winning the World Cup for India. We are not interested in finding out the probability for every other team. So we will formulate the problem in the following way, 
+
+Let's say event A denotes India winning the World Cup. So, another event B denotes India not winning the World Cup. 
+
+P(A) + P(B) = 1
+
+P(A) = 1 - P(B) 
+
+Such events are called elementary events. 
+
+Addition Rules For Probability
+For any two events A and B, based on the fact whether both the events are Mutually Exclusive or not, Two different Rules are described,
+
+Rule 1: When the events are Mutually Exclusive
+
+When the events are mutually exclusive, the probability of the events occurring is the sum of both events.
+
+P(A∪ B) = P(A) + P(B)
+
+Rule 2: When the events are not mutually exclusive
+
+There is always some overlapping between two non-mutually exclusive events, Therefore, the Probability of the events will become,
+
+P(A∪ B) = P(A) + P(B) - P(A∩ B)
