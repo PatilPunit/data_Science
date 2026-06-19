@@ -1,0 +1,98 @@
+The multiplication rule of probability explains the condition between two events. For two events A and B associated with a sample space S set A∩B denotes the events in which both events A and event B have occurred. Hence, (A∩B) denotes the simultaneous occurrence of events A and B. Event A∩B can be written as AB. The probability of event AB is obtained by using the properties of conditional probability.
+
+What is the Multiplication Rule of Probability?
+According to the multiplication rule of probability, the probability of occurrence of both the events A and B is equal to the product of the probability of B occurring and the conditional probability that event A occurring given that event B occurs.
+
+If A and B are dependent events, then the probability of both events occurring simultaneously is given by:
+
+P(A ∩ B) = P(B) . P(A|B)
+If A and B are two independent events in an experiment, then the probability of both events occurring simultaneously is given by:
+
+P(A ∩ B) = P(A) . P(B)
+Proof
+We know that the conditional probability of event A given that B has occurred is denoted by P(A|B) and is given by:
+
+ 
+ 
+Where, P(B)≠0
+
+P(A∩B) = P(B)×P(A|B) ……………………………………..(1)
+
+
+ 
+ 
+Where, P(A) ≠ 0.
+
+P(B∩A) = P(A)×P(B|A)
+
+Since, P(A∩B) = P(B∩A)
+
+P(A∩B) = P(A)×P(B|A) ………………………………………(2)
+
+From (1) and (2), we get:
+
+P(A∩B) = P(B)×P(A|B) = P(A)×P(B|A) where,
+
+P(A) ≠ 0,P(B) ≠ 0.
+
+The above result is known as the multiplication rule of probability.
+
+For independent events A and B, P(B|A) = P(B). The equation (2) can be modified into,
+
+P(A∩B) = P(B) × P(A)
+
+Multiplication Theorem of Probability
+We have already learned the multiplication rules we follow in probability, such as;
+
+P(A∩B) = P(A)×P(B|A) ; if P(A) ≠ 0
+
+P(A∩B) = P(B)×P(A|B) ; if P(B) ≠ 0
+
+Let us learn here the multiplication theorems for independent events A and B.
+
+If A and B are two independent events for a random experiment, then the probability of simultaneous occurrence of two independent events will be equal to the product of their probabilities. Hence,
+
+P(A∩B) = P(A).P(B)
+
+Now, from multiplication rule we know;
+
+P(A∩B) = P(A)×P(B|A)
+
+Since A and B are independent, therefore;
+
+P(B|A) = P(B)
+
+Therefore, again we get;
+
+P(A∩B) = P(A).P(B)
+
+Hence, proved.
+
+Solved Example of Multiplication Rule of Probability
+Illustration 1: An urn contains 20 red and 10 blue balls. Two balls are drawn from a bag one after the other without replacement. What is the probability that both the balls are drawn are red?
+
+Solution: Let A and B denote the events that the first and the second balls are drawn are red balls. We have to find P(A∩B) or P(AB).
+
+P(A) = P(red balls in first draw) = 20/30
+
+Now, only 19 red balls and 10 blue balls are left in the bag. The probability of drawing a red ball in the second draw too is an example of conditional probability where the drawing of the second ball depends on the drawing of the first ball.
+
+Hence Conditional probability of B on A will be,
+
+P(B|A) = 19/29
+
+By multiplication rule of probability,
+
+P(A∩B) = P(A) × P(B|A)
+
+
+ 
+ 
+ 
+ 
+Addition Rule of Probability
+The addition rule states the probability of two events is the sum of the probabilities of two events that will happen minus the probability of both the events that will happen.
+
+Mathematically, the addition rule of probability is expressed as:
+
+P(A ∪ B) = P (A) + P(B) – P(A ∩ B)
