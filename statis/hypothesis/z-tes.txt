@@ -1,0 +1,1050 @@
+A Z-test is a type of hypothesis test that compares the sample’s average to the population’s average and calculates the Z-score and tells us how much the sample average is different from the population average by looking at how much the data normally varies.
+
+It is particularly useful when the sample size is large >30. It is also known as Z-Statistics and its formula is:
+
+Z-Score
+=
+x
+ˉ
+−
+μ
+σ
+/
+n
+Z-Score= 
+σ/ 
+n
+​
+ 
+x
+ˉ
+ −μ
+​
+ 
+
+where:
+
+x
+ˉ
+ 
+x
+ˉ
+  : mean of the sample.
+μ
+ 
+μ : mean of the population.
+σ
+ 
+σ : Standard deviation of the population.
+n : Sample size
+Let's understand with the help of example The average family annual income in India is 200k with a standard deviation of 5k and the average family annual income in Delhi is 300k. Then Z-Score for Delhi will be.
+
+Z-Score
+=
+x
+ˉ
+−
+μ
+σ
+/
+n
+=
+300
+−
+200
+5
+/
+n
+=
+100
+5
+/
+n
+=
+20
+n
+Z-Score
+​
+  
+= 
+σ/ 
+n
+​
+ 
+x
+ˉ
+ −μ
+​
+ 
+= 
+5/ 
+n
+​
+ 
+300−200
+​
+ 
+= 
+5/ 
+n
+​
+ 
+100
+​
+ 
+=20 
+n
+​
+ 
+​
+ 
+
+This indicates that the average family's annual income in Delhi is 20 standard deviations above the mean of the population (India).
+
+For a z-test to provide reliable results these assumptions must be met:
+
+Normal Distribution: The population from which the sample is drawn should be approximately normally distributed.
+Equal Variance: The samples being compared should have the same variance.
+Independence: All data points should be independent of one another.
+Steps to perform Z-test
+1. First we identify the null and alternate hypotheses.
+
+2. Then we determine the level of significance (
+α
+α).
+
+3. Next we find the critical value of Z in the z-test.
+
+4. Then we calculate the z-test statistics using the formula :
+
+Z
+=
+(
+x
+‾
+−
+μ
+)
+(
+σ
+/
+n
+)
+Z= 
+(σ/ 
+n
+​
+ )
+( 
+x
+ −μ)
+​
+ 
+
+Where:
+
+x
+ˉ
+ 
+x
+ˉ
+  : mean of the sample.
+μ
+ 
+μ : mean of the population.
+σ
+ 
+σ : Standard deviation of the population.
+n
+n : sample size.
+5. Now we compare with the hypothesis and decide whether to reject or not reject the null hypothesis.
+
+Type of Z-test
+There are mainly two types of Z-tests. Let's understand them one by one:
+
+1. One Sample Z test
+A one-sample Z-test is used to determine if the mean of a single sample is significantly different from a known population mean. Use it when:
+
+The population standard deviation is known.
+The sample size is large (usually n>30).
+The data is approximately normally distributed.
+Suppose a company claims that their new smartphone has an average battery life of 12 hours. A consumer group tests 100 phones and finds an average battery life of 11.8 hours with a known population standard deviation of 0.5 hours.
+
+Step 1: Hypotheses
+
+H
+0
+:
+μ
+=
+12
+H 
+0
+​
+ :μ=12: 
+H
+1
+:
+μ
+≠
+12
+H 
+1
+​
+ :μ
+
+=12
+Step 2: Calculate the Z-Score
+
+We can calculate Z-score using the formula:
+
+z
+=
+x
+−
+μ
+σ
+n
+z= 
+n
+​
+ 
+σ
+​
+ 
+x−μ
+​
+ 
+
+Where: 
+x
+ˉ
+=
+11.8
+x
+ˉ
+ =11.8 , 
+μ
+=
+12
+μ=12, 
+σ
+=
+0.5
+σ=0.5 and 
+n
+=
+100
+n=100
+
+After putting the value we get:
+
+z
+=
+11.8
+−
+12
+0.5
+100
+=
+−
+4
+z= 
+100
+​
+ 
+0.5
+​
+ 
+11.8−12
+​
+ =−4
+
+Step 3: Decision
+
+Since 
+∣
+Z
+∣
+=
+4
+>
+1.96
+∣Z∣=4>1.96 (critical value for
+α
+α = 0.05) we reject 
+H
+0
+H 
+0
+​
+  indicate significant evidence against the company's claim.
+
+Now let's implement this in Python using the Statsmodels and Numpy Library:
+
+
+import numpy as np
+from statsmodels.stats.weightstats import ztest
+
+data = np.random.normal(loc=11.8, scale=0.5, size=100)
+population_mean = 12
+population_std_dev = 0.5
+
+z_statistic, p_value = ztest(data, value=population_mean)
+
+print(f"Z-Statistic: {z_statistic:.4f}")
+print(f"P-Value: {p_value:.4f}")
+
+alpha = 0.05
+if p_value < alpha:
+    print("Reject the null hypothesis: The average battery life is different from 12 hours.")
+else:
+    print("Fail to reject the null hypothesis: The average battery life is not significantly different from 12 hours.")
+Output:
+
+Z-Statistic: -560128131373970.2500 
+P-Value: 0.0000 
+Reject the null hypothesis: The average battery life is different from 12 hour
+
+2. Two-sampled z-test
+In this test we have provided 2 normally distributed and independent populations and we have drawn samples at random from both populations. Here we consider 
+u
+1
+u 
+1
+​
+  and 
+u
+2
+u 
+2
+​
+  to be the population mean and 
+X
+1
+X 
+1
+​
+ and 
+X
+2
+X 
+2
+​
+  to be the observed sample mean. Here our null hypothesis could be like this:
+
+H
+0
+:
+μ
+1
+−
+μ
+2
+=
+0
+   
+H 
+0
+​
+ :μ 
+1
+​
+ −μ 
+2
+​
+ =0   and alternative hypothesis
+H
+1
+:
+μ
+1
+−
+μ
+2
+≠
+0
+H 
+1
+​
+ :μ 
+1
+​
+ −μ 
+2
+​
+ 
+
+=0
+and the formula for calculating the z-test score:
+
+Z
+=
+(
+X
+1
+‾
+−
+X
+2
+‾
+)
+−
+(
+μ
+1
+−
+μ
+2
+)
+σ
+1
+2
+n
+1
++
+σ
+2
+2
+n
+2
+   
+Z= 
+n 
+1
+​
+ 
+σ 
+1
+2
+​
+ 
+​
+ + 
+n 
+2
+​
+ 
+σ 
+2
+2
+​
+ 
+​
+ 
+​
+ 
+( 
+X 
+1
+​
+ 
+​
+ − 
+X 
+2
+​
+ 
+​
+ )−(μ 
+1
+​
+ −μ 
+2
+​
+ )
+​
+    
+
+where 
+σ
+1
+σ 
+1
+​
+   and 
+σ
+2
+σ 
+2
+​
+   are the standard deviation and 
+n
+1
+n 
+1
+​
+  and 
+n
+2
+n 
+2
+​
+  are the sample size of population corresponding to 
+u
+1
+u 
+1
+​
+  and 
+u
+2
+u 
+2
+​
+  . Let's look at the example to understand:
+
+Example: There are two groups of students preparing for a competition: Group A and Group B. Group A has studied offline classes, while Group B has studied online classes. After the examination the score of each student comes. Now we want to determine whether the online or offline classes are better.
+
+Group A: Sample size n1 = 50, Sample mean 
+x
+ˉ
+1
+=
+75
+x
+ˉ
+  
+1
+​
+ =75, Population standard deviation 
+σ
+1
+=
+10
+σ 
+1
+​
+ =10
+Group B: Sample size n2 = 60, Sample mean 
+x
+ˉ
+2
+=
+80
+x
+ˉ
+  
+2
+​
+ =80, Population standard deviation 
+σ
+2
+=
+12
+σ 
+2
+​
+ =12
+Assuming a 5% significance level perform a two-sample z-test to determine if there is a significant difference between the online and offline classes.
+
+Solution:
+
+Step 1: Null & Alternate Hypothesis
+
+Null Hypothesis: There is no significant difference between the mean score between the online and offline classes
+ 
+μ
+1
+−
+μ
+2
+=
+0
+ μ 
+1
+​
+ −μ 
+2
+​
+ =0
+Alternate Hypothesis: There is a significant difference in the mean scores between the online and offline classes.
+ 
+μ
+1
+−
+μ
+2
+≠
+0
+ μ 
+1
+​
+ −μ 
+2
+​
+ 
+
+=0
+Step 2: Significance Level
+
+Significance Level: 5% 
+α
+=
+0.05
+α=0.05
+Step 3: Z-Score
+
+Z-score
+=
+(
+x
+1
+−
+x
+2
+)
+−
+(
+μ
+1
+−
+μ
+2
+)
+σ
+1
+2
+n
+1
++
+σ
+2
+2
+n
+1
+=
+(
+75
+−
+80
+)
+−
+0
+1
+0
+2
+50
++
+1
+2
+2
+60
+=
+−
+5
+2
++
+2.4
+=
+−
+5
+2.0976
+=
+−
+2.384
+Z-score
+​
+  
+= 
+n 
+1
+​
+ 
+σ 
+1
+2
+​
+ 
+​
+ + 
+n 
+1
+​
+ 
+σ 
+2
+2
+​
+ 
+​
+ 
+​
+ 
+(x 
+1
+​
+ −x 
+2
+​
+ )−(μ 
+1
+​
+ −μ 
+2
+​
+ )
+​
+ 
+= 
+50
+10 
+2
+ 
+​
+ + 
+60
+12 
+2
+ 
+​
+ 
+​
+ 
+(75−80)−0
+​
+ 
+= 
+2+2.4
+​
+ 
+−5
+​
+ 
+= 
+2.0976
+−5
+​
+ 
+=−2.384
+​
+ 
+
+Step 4: Check to Critical Z-Score value in the Z-Table for alpha/2 = 0.025
+
+ Critical Z-Score = 1.96
+Step 5: Compare with the absolute Z-Score value
+
+absolute(Z-Score) > Critical Z-Score
+So we reject the null hypothesis and there is a significant difference between the online and offline classes.
+Now we will implement the two sampled z-test using numpy and scipy.
+
+
+import numpy as np
+import scipy.stats as stats
+
+n1 = 50
+x1 = 75
+sigma1 = 10
+
+n2 = 60
+x2 = 80
+sigma2 = 12
+
+D = 0
+alpha = 0.05
+
+z_score = ((x1 - x2) - D) / np.sqrt((sigma1**2 / n1) + (sigma2**2 / n2))
+print("Z-Score:", np.abs(z_score))
+
+z_critical = stats.norm.ppf(1 - alpha/2)
+print("Critical Z-Score:", z_critical)
+
+if np.abs(z_score) > z_critical:
+    print("Reject the null hypothesis.")
+else:
+    print("Fail to reject the null hypothesis.")
+Output:
+
+Z-Score: 2.3836564731139807
+Critical Z-Score: 1.959963984540054
+Reject the null hypothesis.
+
+So, There is a significant difference between the online and offline classes.
+
+The Z-Table
+1-
+Z-Table
+Solved examples
+Problem 1: A company claims that the average battery life of their new smartphone is 12 hours. A consumer group tests 100 phones and finds the average battery life to be 11.8 hours with a population standard deviation of 0.5 hours. At a 5% significance level, is there evidence to refute the company's claim?
+
+Solution:
+
+Step 1: State the hypotheses
+H
+0
+:
+μ
+=
+12
+(
+null hypothesis
+)
+H
+1
+:
+μ
+≠
+12
+(
+alternative hypothesis
+)
+H 
+0
+​
+ :μ=12(null hypothesis)
+H 
+1
+​
+ :μ
+
+=12(alternative hypothesis)
+
+Step 2: Calculate the Z-score
+Z
+=
+x
+ˉ
+−
+μ
+σ
+n
+=
+11.8
+−
+12
+0.5
+100
+=
+−
+0.2
+0.05
+=
+−
+4
+Z= 
+n
+​
+ 
+σ
+​
+ 
+x
+ˉ
+ −μ
+​
+ 
+= 
+100
+​
+ 
+0.5
+​
+ 
+11.8−12
+​
+ 
+= 
+0.05
+−0.2
+​
+ 
+=−4
+
+Step 3: Find the critical value (two-tailed test at 5% significance)
+Z
+0.025
+=
+±
+1.96
+Z 
+0.025
+​
+ =±1.96
+
+Step 4: Compare Z-score with critical value
+|-4| > 1.96, so we reject the null hypothesis.
+
+Conclusion: There is sufficient evidence to refute the company's claim about battery life.
+
+Problem 2: A researcher wants to compare the effectiveness of two different medications for reducing blood pressure. Medication A is tested on 50 patients, resulting in a mean reduction of 15 mmHg with a standard deviation of 3 mmHg. Medication B is tested on 60 patients, resulting in a mean reduction of 13 mmHg with a standard deviation of 4 mmHg. At a 1% significance level, is there a significant difference between the two medications?
+
+Solution:
+
+Step 1: State the hypotheses
+H
+0
+:
+μ
+1
+−
+μ
+2
+=
+0
+(
+null hypothesis
+)
+H
+1
+:
+μ
+1
+−
+μ
+2
+≠
+0
+(
+alternative hypothesis
+)
+H 
+0
+​
+ :μ 
+1
+​
+ −μ 
+2
+​
+ =0(null hypothesis)
+H 
+1
+​
+ :μ 
+1
+​
+ −μ 
+2
+​
+ 
+
+=0(alternative hypothesis)
+
+Step 2: Calculate the Z-score
+Z
+=
+x
+ˉ
+1
+−
+x
+ˉ
+2
+σ
+1
+2
+n
+1
++
+σ
+2
+2
+n
+2
+=
+15
+−
+13
+3
+2
+50
++
+4
+2
+60
+=
+2
+0.18
++
+0.2667
+=
+2
+0.6455
+=
+3.10
+Z= 
+n 
+1
+​
+ 
+σ 
+1
+2
+​
+ 
+​
+ + 
+n 
+2
+​
+ 
+σ 
+2
+2
+​
+ 
+​
+ 
+​
+ 
+x
+ˉ
+  
+1
+​
+ − 
+x
+ˉ
+  
+2
+​
+ 
+​
+ 
+= 
+50
+3 
+2
+ 
+​
+ + 
+60
+4 
+2
+ 
+​
+ 
+​
+ 
+15−13
+​
+ 
+= 
+0.18+0.2667
+​
+ 
+2
+​
+ 
+= 
+0.6455
+2
+​
+ 
+=3.10
+
+Step 3: Find the critical value (two-tailed test at 1% significance)
+Z
+0.005
+=
+±
+2.576
+Z 
+0.005
+​
+ =±2.576
+
+Step 4: Compare Z-score with critical value
+3.10 > 2.576, so we reject the null hypothesis.
+
