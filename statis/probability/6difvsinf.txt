@@ -1,0 +1,28 @@
+Statistics is a key field that helps us make sense of data through collection, analysis, and presentation. It plays an important role in many areas, from business to healthcare, by guiding decision-making and drawing conclusions. This process is made easier with the help of two main branches of statistics: descriptive and inferential.
+
+Descriptive Statistics
+Descriptive statistics refers to the process of summarizing and analyzing data to describe its main features in a clear and meaningful way. It is used to present raw data in a form that makes it easier to understand and interpret. Descriptive statistics involves both graphical representations (such as charts and plots) and numerical measures to summarize data effectively. Unlike inferential statistics, which makes predictions about a population based on a sample, Descriptive statistics is applied to data that is already known.
+
+Inferential Statistics
+Inferential statistics involves using data from a sample to make predictions, generalizations, or conclusions about a larger population. Unlike descriptive statistics, which simply summarizes known data, inferential statistics makes inferences or draws conclusions that go beyond the available data. It uses probability theory to estimate population parameters and test hypotheses. By working with a sample, inferential statistics allows researchers to make informed decisions without having to gather data from an entire population.
+
+stat
+Difference between Descriptive and Inferential statistics
+Descriptive Statistics	Inferential Statistics
+It gives information about raw data which describes the data in some manner.	It makes inferences about the population using data drawn from the population.
+It helps in organizing, analyzing, and to present data in a meaningful manner.	It allows us to compare data, and make hypotheses and predictions.
+It is used to describe a situation.	It is used to explain the chance of occurrence of an event.
+It explains already known data and is limited to a sample or population having a small size.	It attempts to reach the conclusion about the population.
+Examples include: mean, median, mode, range, variance, histograms, pie charts.
+
+Examples include: confidence intervals, hypothesis testing, regression models, p-values.
+
+Limited to presenting and analyzing known data.
+
+Allows predictions and conclusions that go beyond the data at hand.
+
+Used for describing trends, organizing data for presentation.
+
+Used for predicting trends, testing hypotheses, generalizing data from sample to population.
+
+It can be achieved with the help of charts, graphs, tables, etc.	It can be achieved by probability.
