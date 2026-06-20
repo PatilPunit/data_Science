@@ -1,0 +1,9 @@
+term              population                  sample
+
+mean              mu                           x-bar
+
+variance          sigma-square                 s-square
+
+standard D        sigma                        s
+
+count             N                            n
