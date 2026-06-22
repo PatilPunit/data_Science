@@ -1,0 +1,361 @@
+T-Test is a method used in statistics to determine if there is a significant difference between the means of two groups and how they are related. In T-Test statistics, the sample data is a subset of the two groups that we use to draw conclusions about the groups as a whole. 
+
+
+Diffrence between z-test and t-test is we dont have standard deviation of population we just have data of sample and mean of population aslo samople size is less than 30
+
+
+
+T-Test-in-Statistics
+T-Test in Statistics
+
+
+For example, if we want to know the average weight of mangoes grown on a farm, the population would consist of all the mangoes that grew on the farm. However, it would be time-consuming to weigh each mango. Instead, we could take a sample of mangoes from trees at different locations on the farm and use their weights to make inferences about the average weight of all the mangoes grown on the farm.
+
+T-Test Definition
+T-Test is a statistics method to determine significance changes between means of two groups. It helps us to determine whether the data sets belong to the same group or not. This comparison is often called a T-test.
+
+T-Test Formula
+There is no specific formula for T-Test, as it is divided into various types such as One Samples T-Test, Independent Samples T-test, etc. which are used as per the need. The formula used in each type is defined under the specific headings. The formula allows us to calculate a T-value which helps to make a comparison between the data sets.
+
+Value of T-Test
+The value obtained by substituting required values to the t-test formula is called the t-value. A larger T-value implies that the sets belong to a different population, while a smaller T-value implies that they belong to the same population. The formula is comprised of the values of mean, standard deviation and variance of the data sets under consideration.
+
+How to Calculate T Value in T-Test
+To calculate T-value in T-Test, we can use the following steps:
+
+Step 1: To perform a T-test, two hypotheses namely the null hypothesis and the alternative hypothesis are defined which have different meanings for different types of T-tests.
+
+Step 2: And, a value for the level of significance is defined which signifies the probability of making a Type I error, which implies the rejection of the null hypothesis while it is actually true. Commonly used values of level of significance are 0.05 (5%) and 0.01 (1%).
+
+Step 3: A higher significance level, such as α = 0.05, provides a higher tolerance for Type I errors, meaning that it is more likely to reject the null hypothesis even when it is true.
+
+Step 4: On the other hand, a lower significance level, such as α = 0.01, reduces the risk of Type I errors but it may increase the chances of accepting the null hypothesis when it is actually false, resulting in a Type II error.
+
+Types of T-Test
+Below are the three types of T-Test mentioned below.
+
+One Sample T-test
+Independent Samples T-test
+Paired Samples T-test
+Let's discuss these types in detail as follows:
+
+One Sample T-Test
+As the name implies, this test is used when we have one data set for a sample and we need to determine whether this data set belongs to a particular population or not. The mean value for the population data must be known in this case. The formula to determine T-value, in this case, is as follows:
+
+t = (x̄ - μ) / (σ / √n)
+
+Where,
+
+t is the t-value,
+x̄ is the Sample mean,
+μ is the Population mean,
+σ is the Sample standard deviation, and
+n is the Sample size.
+Steps to Calculate T Value One Sample T-Test 
+To perform the One Sample T-test, the steps listed below are generally followed:
+
+Step 1: State a null hypothesis and an alternative hypothesis. The null hypothesis assumes that the sample mean and the known population mean (μ) are equal, while the other assumes that the sample mean is different from the population mean.
+
+Step 2: Define values for the level of significance (α) and the degree of freedom (df). The degree of freedom equals (n - 1) for this case.
+
+Step 3: Calculate the t-value using the formula stated above by putting all the known values of the sample mean (x̄), sample standard deviation (σ), the population mean (μ), and the sample size (n).
+
+Step 4: Determine the associated p-value with the t-value using a t-distribution table.
+
+Step 5: Compare the p-value to the level of significance. If the p-value is less than the level of significance, reject the null hypothesis and conclude that the sample mean is significantly different from the population mean. Otherwise, conclude that there is no significant difference between the sample mean and the population mean.
+
+Independent Samples T-Test
+As the name suggests, an Independent samples T-test is used when we need to compare the statistical means of two independent samples or groups. It helps us determine whether there is a significant difference between the means of the two groups. If there is a significant difference, it suggests that the groups likely have different population means; otherwise, they have the same population means.
+
+For example, when an investigation aims to determine if there is a significant difference in the mean scores between athletes who follow a specific training camp (Team A) and those who do not (Team B), an independent samples t-test can be conducted.
+
+This test is performed using either of two assumptions made about variances of the samples, one assumes equal variances for the sample and the other assumes unequal variances for the samples.
+
+Unequal Variances T-Test
+Under this test, variances of two groups considered are assumed to be equal. This is appropriate when we are uncertain about the variances of the two groups considered. The formula to calculate T-value, in this case, is as follows:
+
+t = (x̄1 - x̄2) / √((σ12/n1) + (σ22/n2))
+
+Where,
+
+x̄1 is the sample mean of Group 1,
+x̄2 is the sample mean of Group 2,
+σ1 is the sample standard deviation of Group 1,
+σ2 is the sample standard deviation of Group 2,
+n1 is the sample size of Group 1, and
+n2 sample size of Group 2.
+Equal Variance T-Test
+Under this test, variances of two groups considered are assumed to be equal. This is appropriate when we have some assurance about variances of data considered to be equal. The formula to calculate T-value, in this case, is similar to the above formula with a slight change that σ1 = σ2 = σ.
+
+t = (x̄1 - x̄2) / √(σ2(1/n1 + 1/n2))
+
+Where,
+
+x̄1 is the sample mean of Group 1,
+x̄2 is the sample mean of Group 2,
+σ is the standard deviation of both groups,
+n1 is the sample size of Group 1, and
+n2 sample size of Group 2.
+T Test for Independent Samples
+The steps listed below are generally followed to perform this test:
+
+Step 1: State a null hypothesis and an alternate hypothesis. The null hypothesis assumes that the means of the two groups are equal (x̄1 = x̄2), while the other assumes that the means of the two groups are significantly different (x̄1 ≠ x̄2).
+
+Step 2: Define the values for the level of significance (α) and the degrees of freedom (df). The degree of freedom equals (n1 + n2 - 2) in this case.
+
+Step 3: Calculate the t-value from the formula defined above after obtaining the required data related to each group.
+
+Step 4: Find the critical t-value from a t-distribution table with the corresponding degrees of freedom and level of significance.
+
+Step 5: If the calculated t-value is greater than the critical t-value, then reject the null hypothesis. This indicates that there is a significant difference between the means of the two groups. Otherwise, the null hypothesis is not rejected. And, this suggests that there is no significant difference between the means of the two groups.
+
+Paired Samples T-Test
+The Paired samples t-test is used when we want to compare the means of two related groups or samples. For example, we may use this test to compare the average scores of the players of an athletics team before and after a training program. To calculate the t-value in this case, the following formula is used,
+
+t = (x̄d - μd) / (σd / √n)
+
+Where:
+
+t is the t-value,
+x̄d is the sample mean of the differences between the paired observations,
+μd isthe population mean difference,
+σd is the sample standard deviation of the differences,
+n is the number of paired observations.
+Steps for Paired Samples T-Test
+Following are the steps to perform this type of T-test:
+
+Step 1: State the null hypothesis which assumes that there is no significant difference between the statistical means of the paired observations (μd = 0) while the alternative hypothesis assumes that there is a significant difference between the statistical means of the paired observations (μd ≠ 0).
+
+Step 2: Match each observation in one group with a corresponding observation in the other group.
+
+Step 3: Calculate the differences between each paired observation and then, calculate the mean of the differences (x̄d), and the sample standard deviation of the differences (σd). Furthermore, calculate the t-value from the formula.
+
+Step 4: Obtain the critical t-value from a t-distribution table corresponding to the chosen level of significance (α) and degree of freedom (df). The degree of freedom (df) equals (n - 1) in this case.
+
+Step 5: If the calculated t-value is greater than the critical t-value, then reject the null hypothesis. This indicates a significant difference in the sample before and after the intervention. Otherwise, it can be concluded that there is no significant difference in the sample before and after the intervention.
+
+T-Distribution Table
+A T-Distribution table is used to obtain a critical t-value that is used as a reference to the calculated t-value for obtaining further results. Critical t-value depends on values of the level of significance and degrees of freedom. A concise form of the table for critical t-values is as follows for your reference:
+
+Degrees of Freedom (df)
+
+α = 0.05
+
+α = 0.01
+
+1
+
+12.706
+
+63.657
+
+2
+
+4.303
+
+9.925
+
+3
+
+3.182
+
+5.841
+
+4
+
+2.776
+
+4.604
+
+5
+
+2.571
+
+4.032
+
+6
+
+2.447
+
+3.707
+
+7
+
+2.365
+
+3.499
+
+8
+
+2.306
+
+3.355
+
+9
+
+2.262
+
+3.250
+
+10
+
+2.228
+
+3.169
+
+11
+
+2.201
+
+3.106
+
+12
+
+2.179
+
+3.055
+
+13
+
+2.160
+
+3.012
+
+14
+
+2.145
+
+2.977
+
+15
+
+2.131
+
+2.947
+
+16
+
+2.120
+
+2.921
+
+17
+
+2.110
+
+2.898
+
+18
+
+2.101
+
+2.878
+
+19
+
+2.093
+
+2.861
+
+20
+
+2.086
+
+2.845
+
+Solved Problems of T-Test Formula
+Problem 1: Determine whether the average weight of a sample of 20 mangoes is significantly different from the population's average weight of 70 grams. The sample mean weight is 70.55 grams, and the sample standard deviation is 2.82 grams. Use one sample T-test.
+
+Solution:
+
+To perform a T-test, first of all, we define two hypotheses:
+
+Null hypothesis: The sample mean weight of mangoes is equal to the known population mean. (i.e., 70 grams).
+Alternative hypothesis: The sample mean weight of mangoes is not equal to the known mean value.
+Then, determine the degrees of freedom (df): df = n - 1 = 20 - 1 = 19 and define the level of significance(α) as 0.05 for this case. Next, determine the t-value from the formula,
+
+t = (70.55 - 70) / (2.82 / √20)
+
+⇒ t ≈ 1.041
+
+From the t-distribution table, we find 1.041 < 2.093. (i.e. p-value for α = 0.05). So, the null hypothesis is true. Thus, we conclude that the sample does not vary significantly from the population.
+
+Problem 2: Determine if there is a significant difference in the average scores between the two teams. The following data is given: 
+Team A: Score: 65, 68, 70, 63, 67
+Team B: Score: 62, 66, 69, 64, 68
+
+Solution:
+
+According to the question, we come to know that we need to perform an Independent Samples T-test. Set up the null hypothesis and alternative hypothesis:
+
+Null hypothesis: The means of the two groups are equal (μA = μB).
+Alternative hypothesis: The means of the two groups are not equal (μA ≠ μB).
+Next, we calculate the sample means (x̄A and x̄B) and sample standard deviations (σA and σB):
+
+Team A:
+
+Sample size (nA) = 5
+Sample mean (x̄A) = (65 + 68 + 70 + 63 + 67) / 5 = 66.6
+Sample standard deviation (σA) ≈ 2.607
+Team B:
+
+Sample size (nB) = 5
+Sample mean (x̄B) = (62 + 66 + 69 + 64 + 68) / 5 = 65.8
+Sample standard deviation (σB) ≈ 2.588
+Now, we calculate the t-value using the formula:
+
+t = (x̄A - x̄B) / √((σA2 / nA) + (σB2 / nB))
+
+⇒ t = (66.6 - 65.8) / √{(2.6072/5) + (2.5882/5)}
+
+⇒ t ≈ 0.296
+
+Then, determine the degrees of freedom (df): 
+
+df = nA + nB - 2 = 5 + 5 - 2 = 8 
+
+and set the level of significance as 0.05. 
+
+From the table, we get the critical t-value as 2.306. As the calculated t-value is less than the critical t-value, we conclude that the null hypothesis is not rejected, which suggests that there is no significant difference between the average scores of the two teams.
+
+Problem 3: You need to assess the effectiveness of a new teaching scheme by comparing the test scores of the same group of students before and after the implementation of the scheme. The following data is given:
+Before scores: 76, 88, 65, 56, 76
+After scores: 85, 95, 75, 60, 81
+Determine if there is a significant difference in the average test scores before and after the implementation of the scheme.
+
+Solution:
+
+Here, we need to perform a Paired Samples T-test, as we need to compare data of the same sample. Set up the null hypothesis and alternative hypothesis:
+
+Null hypothesis: The population mean difference between the before and after scores are zero (μd = 0).
+Alternative hypothesis: The population mean difference between the before and after scores is not zero (μd ≠ 0).
+Next, calculate the differences between the paired observations:
+
+Difference (d) = After score - Before score
+
+d1 = 85 - 76 = 9
+d2 = 95 - 88 = 7
+d3 = 75 - 65 = 10
+d4 = 60 - 56 = 4
+d5 = 81 - 76 = 5
+Now, calculate the sample mean (x̄d) and sample standard deviation (σd) of the differences:
+
+Sample size (n) = 5
+Sample mean (x̄d) = (d1 + d2 + d3 + d4 + d5) / 5 = (9 + 7 + 10 + 4 + 5) / 5 = 7
+Sample standard deviation (σd) ≈ 2.828
+Then, calculate the t-value using the formula:
+
+t = (x̄d - μd) / (σd / √n) 
+
+⇒ t = (7 - 0) / (2.828 / √5)
+
+⇒ t ≈ 5.535
+
+Next, calculate the value of degrees of freedom (df): 
+
+df = n - 1 = 5 - 1 = 4. 
+
+And, define the level of significance(α) as 0.05. 
+
+Now, from the t-distribution table, we find that the critical t-value is 2.776. As the calculated t-value is greater than the critical t-value (5.535 > 2.776), thus, the null hypothesis is rejected. And we conclude that there is a significant difference in the average test scores before and after the implementation of the scheme.
+
