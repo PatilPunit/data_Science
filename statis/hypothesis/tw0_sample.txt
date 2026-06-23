@@ -1,0 +1,8 @@
+Two sample test is the test in statistics used when two groups or samples of  data and thier stats are given .
+We dont have population mean and standard deviation all we have is sample mean and standard deviation
+we can perform z-test and t-test 
+
+
+The two-sample t-test compares the means of two independent groups. It checks whether the difference between these means is statistically significant. We often use this test when comparing results between two separate groups, like the heights or test scores of students in different classes.
+
+\(t=\frac{\overline{x}_{1}-\overline{x}_{2}}{s_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}}\)
