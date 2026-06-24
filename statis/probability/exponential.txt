@@ -1,0 +1,60 @@
+5. Exponential Distribution
+Definition
+
+The Exponential distribution models the waiting time until the next event occurs.
+
+It is closely related to the Poisson distribution.
+
+Relationship with Poisson
+
+Poisson answers:
+
+How many events occur?
+
+Exponential answers:
+
+How long until the next event occurs?
+
+Parameter
+λ=Rate of occurrence
+Probability Density Function
+f(x)=λe
+−λx
+
+for
+
+x≥0
+Mean
+E(X)=
+λ
+1
+	​
+
+Variance
+Var(X)=
+λ
+2
+1
+	​
+
+Memoryless Property
+
+The Exponential distribution possesses the memoryless property:
+
+P(X>s+t∣X>s)=P(X>t)
+
+This means the future waiting time does not depend on how long you have already waited.
+
+Example
+
+A customer service center receives on average:
+
+10 calls/hour
+
+The Exponential distribution can be used to find the probability that the next call arrives within 5 minutes.
+
+Applications
+Time between phone calls
+Time between machine failures
+Waiting time for buses
+Time between customer arrivals
