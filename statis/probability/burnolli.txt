@@ -1,0 +1,44 @@
+1. Bernoulli Distribution
+Definition
+
+A Bernoulli distribution models an experiment that has only two possible outcomes:
+
+Success (1)
+Failure (0)
+
+It is the simplest probability distribution and serves as the foundation for the Binomial distribution.
+
+Conditions
+Only one trial is performed.
+There are exactly two outcomes.
+Probability of success remains constant.
+Parameters
+p=P(Success)
+q=1−p=P(Failure)
+Probability Mass Function (PMF)
+P(X=x)=p
+x
+(1−p)
+1−x
+
+where
+
+x=0 or 1
+Mean
+E(X)=p
+Variance
+Var(X)=p(1−p)
+Example
+
+A coin is tossed once.
+
+Let:
+
+Head = Success
+Tail = Failure
+
+If the coin is fair:
+
+p=0.5
+
+Then the experiment follows a Bernoulli distribution.

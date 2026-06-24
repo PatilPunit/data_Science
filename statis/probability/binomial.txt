@@ -1,0 +1,84 @@
+2. Binomial Distribution
+Definition
+
+A Binomial distribution models the number of successes in a fixed number of independent Bernoulli trials.
+
+It is essentially a collection of Bernoulli experiments.
+
+Conditions
+Fixed number of trials (n)
+Two outcomes per trial
+Trials are independent
+Probability of success remains constant
+Parameters
+n=Number of trials
+p=Probability of success
+q=1−p
+Probability Mass Function
+P(X=x)=(
+x
+n
+	​
+
+)p
+x
+q
+n−x
+
+where
+
+(
+x
+n
+	​
+
+)=
+x!(n−x)!
+n!
+	​
+
+Mean
+E(X)=np
+Variance
+Var(X)=npq
+Example
+
+A fair coin is tossed 10 times.
+
+Find the probability of obtaining exactly 6 heads.
+
+Here:
+
+n=10
+x=6
+p=0.5
+
+Using:
+
+P(X=6)=(
+6
+10
+	​
+
+)(0.5)
+6
+(0.5)
+4
+Applications
+Number of defective items in a sample
+Number of heads in repeated coin tosses
+Number of students passing an exam
+Relationship Between Bernoulli and Binomial
+
+Bernoulli:
+
+One trial
+
+Binomial:
+
+Multiple Bernoulli trials
+
+Example:
+
+Tossing a coin once → Bernoulli
+Tossing a coin 100 times → Binomial
