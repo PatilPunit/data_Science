@@ -1,0 +1,54 @@
+3. Poisson Distribution
+Definition
+
+A Poisson distribution models the number of events occurring in a fixed interval of time, area, volume, or space when events occur randomly and independently.
+
+Conditions
+Events occur independently.
+Average rate remains constant.
+Events occur randomly.
+Parameter
+λ
+
+where
+
+λ=Average number of events
+Probability Mass Function
+P(X=x)=
+x!
+e
+−λ
+λ
+x
+	​
+
+Mean
+E(X)=λ
+Variance
+Var(X)=λ
+Example
+
+A call center receives an average of 5 calls per minute.
+
+Find the probability of receiving exactly 3 calls in the next minute.
+
+Here:
+
+λ=5
+x=3
+
+Using:
+
+P(X=3)=
+3!
+e
+−5
+5
+3
+	​
+
+Applications
+Calls arriving at a call center
+Website visitors per minute
+Accidents per month
+Machine failures per day
