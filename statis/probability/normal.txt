@@ -1,0 +1,58 @@
+4. Normal Distribution
+Definition
+
+The Normal distribution is a continuous probability distribution that is symmetric around its mean.
+
+It is often called the Gaussian Distribution or Bell Curve.
+
+Many natural phenomena approximately follow a Normal distribution.
+
+Characteristics
+Bell-shaped curve
+Symmetric about the mean
+Mean = Median = Mode
+Total area under curve = 1
+Parameters
+μ=Mean
+σ=Standard Deviation
+Probability Density Function
+f(x)=
+σ
+2π
+	​
+
+1
+	​
+
+e
+−
+2σ
+2
+(x−μ)
+2
+	​
+
+Important Rule
+68-95-99.7 Rule
+
+Approximately:
+
+68% of observations lie within 1σ
+95% within 2σ
+99.7% within 3σ
+Example
+
+Human heights.
+
+Suppose:
+
+μ=170 cm
+σ=10 cm
+
+Most people's heights will be clustered around 170 cm.
+
+Applications
+IQ scores
+Heights and weights
+Measurement errors
+Examination scores
