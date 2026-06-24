@@ -1,0 +1,765 @@
+One of the most basic principles in statistics, the Central Limit Theorem (CLT) describes how the sample mean distribution changes with increasing sample size.
+
+If the sample is sufficiently large (usually n > 30), then the sample means' distribution will be normally distributed regardless of the underlying population distribution, whether it is normal, skewed, or otherwise.  
+
+central_limit_theorem
+All types of mean distributions tend to converge to a Normal Distribution as the sample size increases.
+
+This is crucial since, even if population distribution is unknown, statisticians are able to draw inferences about the population based on the sample data. Larger samples are more accurate because CLT also proves that the distribution of the sample mean will have the mean as the population mean, and the standard deviation will reduce with increasing sample size. This theorem forms the basis for many. All types of mean distributions tend to converge to a normal distribution as the sample size increases.
+
+The Central Limit Theorem in statistics states that as the sample size increases and its variance is finite, then the distribution of the sample mean approaches the normal distribution, irrespective of the shape of the population distribution.
+
+Central Limit Theorem Formula
+Let us assume we have a random variable X. Let σ be its standard deviation, and let μ be the mean of the random variable.
+
+Now, as per the Central Limit Theorem, the sample mean 
+X
+‾
+X
+ will approximate a normal distribution, which is given as 
+X
+‾
+X
+  ⁓ N(μ, σ/√n).
+The Z-score of the random variable 
+X
+‾
+X
+ is given as Z =
+x
+‾
+−
+μ
+σ
+n
+n
+​
+ 
+σ
+​
+ 
+x
+ −μ
+​
+ . Here 
+x
+‾
+x
+ is the mean
+X
+‾
+X
+ .
+The image of the formula is attached below.
+
+Central-Limit-Theorem-Formula
+
+Central Limit Theorem Proof
+Let the independent random variables be X1, X2, X3, ..., Xn, which are identically distributed and where their mean is zero (μ = 0) and their variance is one (σ2 = 1).
+
+The Z score is given as, Z = 
+X
+‾
+−
+μ
+σ
+n
+=
+n
+(
+X
+ˉ
+n
+−
+μ
+)
+σ
+n
+​
+ 
+σ
+​
+ 
+X
+ −μ
+​
+ = 
+σ
+n
+​
+ ( 
+X
+ˉ
+  
+n
+​
+ −μ)
+​
+ 
+
+where 
+X
+ˉ
+n
+=
+1
+n
+∑
+i
+=
+1
+n
+X
+i
+.
+X
+ˉ
+  
+n
+​
+ = 
+n
+1
+​
+ ∑ 
+i=1
+n
+​
+ X 
+i
+​
+ .
+
+Here, according to the Central Limit Theorem, Z approximates to a normal distribution as the value of n increases.
+
+i.e., 
+Z
+n
+→
+d
+N
+(
+0
+,
+1
+)
+as
+n
+→
+∞
+Z 
+n
+​
+  
+d
+​
+ N(0,1)asn→∞
+
+Let m(t) be the moment generating function of Xi
+
+⇒ M(0) = 1
+
+⇒ M'(1) = E(Xi) = μ = 0
+
+⇒ M''(0) = E(Xi2) = 1
+
+The Moment Generating Function for Xi/√n is given as E[etXi/√n]
+
+Since X1, X2, X3 . . . Xn are independent, the Moment Generating Function for (X1 + X2 + X3 + . . . + Xn)/√n is given as [M(t/√n)]n
+
+Let us assume a function
+
+f(t) = log M(t)
+
+⇒ f(0) = log M(0) = 0
+
+⇒ f'(0) = M'(0)/M(0) = μ/1 = μ
+
+⇒ f''(0) = (M(0). M"(0) - M'(0)²/M'(0)² = 1
+
+Now, using L'Hospital's Rule, we will find t/√n as t2/2
+
+⇒ [M(t/√n)]2 = [ef(t/√n)]n
+
+⇒ [enf(t/√n)] = e^(t2/2)
+
+Thus the Central Limit Theorem has been proved by getting the Moment Generating Function of a Standard Normal Distribution.
+
+Central Limit Theorem Example
+
+Let's say we have a large sample of observations and each sample is randomly produced and independent of other observations. Calculate the average of the observations, thus having a collection of averages of observations. Now as per the Central Limit Theorem, if the sample size is adequately large, then the probability distribution of these sample averages will approximate to a normal distribution.
+
+Assumptions of the Central Limit Theorem
+The Central Limit Theorem is valid for the following conditions:
+
+The drawing of the sample from the population should be random.
+The drawing of the samples should be independent of each other.
+The sample size should not exceed ten percent of the total population when sampling is done without replacement.
+The sample size should be adequately large.
+CLT only holds for a population with finite variance.
+Steps to Solve Problems on Central Limit Theorem
+Problems of the Central Limit Theorem that involve >, <, or "between" can be solved by the following steps:
+
+Step 1: First identify the > and < associated with sample size, population size, mean, and variance in the problem. Also there can be 'between,; associated with a range of two numbers.
+Step 2: Draw a Graph with Mean as the Center
+Step 3: Find the Z-Score using the formula
+Step 4: Refer to the Z table to find the value of Z obtained in the previous step.
+Step 5: If the problem involves '>', subtract the Z score from 0.5; if the problem involves '<', add 0.5 to the Z score; and if the problem involves 'between,' then perform only steps 3 and 4.
+Step 6: The Z score value is found along 
+X
+‾
+X
+ 
+Step 7: Convert the decimal value obtained in all three cases to decimal.
+Mean of the Sample Mean
+According to the Central Limit Theorem:
+
+If you have a population with a mean μ, the mean of the sample means (also called the expected value of the sample mean) will be equal to the population mean:
+E
+(
+X
+ˉ
+)
+E( 
+X
+ˉ
+ ) = μ 
+
+Standard Deviation of the Sample Mean
+The standard deviation of the sample mean (often called the standard error) describes how much the sample mean is expected to vary from the true population mean. It is calculated using the population standard deviation σ and the sample size n:
+
+σXˉ = 
+σ
+n
+n
+​
+ 
+σ
+​
+ 
+
+​
+σ
+p
+^
+=
+p
+(
+1
+−
+p
+)
+n
+σ 
+p
+^
+​
+ 
+​
+ = 
+n
+p(1−p)
+​
+ 
+​
+  (For categorical data, the standard error for proportions is calculated using the true population proportion p)
+
+Central Limit Theorem Applications in Computer Science
+Performance Analysis & Benchmarking
+Measuring latency/response times of systems (e.g., web servers, databases).
+The average latency over many requests converges to a normal distribution.
+Enables use of confidence intervals and parametric tests (t-tests) to compare system optimizations.
+A/B Testing & Experimentation
+Comparing conversion rates between two website versions.
+User conversions are Bernoulli trials (0/1), so the average conversion rate (proportion) is approximately normal for large samples.
+Validates statistical tests (e.g., Z-tests) to determine if differences are significant. Without CLT, comparing proportions would be less straightforward.
+Monte Carlo Simulations
+Estimating complex values (e.g., π, financial risks, graphics rendering) via random sampling.
+The simulation output (e.g., mean of samples) becomes normally distributed around the true value.
+Provides error bounds (e.g., "estimate ± 2 standard errors") and justifies increasing samples to reduce error.
+Machine Learning (ML) & Statistics
+Used for model evaluation. Accuracy/F1-scores of ML models over test sets converge to normality, enabling comparison via confidence intervals.
+Stochastic Gradient Descent (SGD): Batch gradients are averages of random samples → approximately normal noise.
+Feature Engineering: Aggregated features (e.g., mean user interactions per day) often become Gaussian-like, simplifying assumptions for models (e.g., linear regression).
+Also Check
+ Central Limit Theorem in Data Science & Machine Learning
+
+Solved Examples
+Example 1. The male population's weight data follows a normal distribution. It has a mean of 70 kg and a standard deviation of 15 kg. What would the mean and standard deviation of a sample of 50 guys be if a researcher looked at their records?
+
+Given: μ = 70 kg, σ = 15 kg, n = 50
+
+As per the Central Limit Theorem, the sample mean is equal to the  population mean.
+
+Hence, 
+μ
+x
+‾
+   
+μ 
+x
+ 
+​
+     = μ = 70 kg
+
+Now, 
+σ
+x
+‾
+=
+σ
+n
+   
+σ 
+x
+ 
+​
+ = 
+n
+​
+ 
+σ
+​
+     = 15/√50
+
+⇒ 
+σ
+x
+‾
+   
+σ 
+x
+ 
+​
+     ≈ 2.1 kg
+
+Example 2. A distribution has a mean of 69 and a standard deviation of 420. Find the mean and standard deviation if a sample of 80 is drawn from the distribution.
+
+Given: μ = 69, σ = 420, n = 80
+
+As per the Central Limit Theorem, the sample mean is equal to the  population mean.
+
+Hence, 
+μ
+x
+‾
+   
+μ 
+x
+ 
+​
+     = μ = 69 
+
+Now, 
+σ
+x
+‾
+=
+σ
+n
+σ 
+x
+ 
+​
+ = 
+n
+​
+ 
+σ
+​
+ 
+
+⇒ 
+σ
+x
+‾
+   
+σ 
+x
+ 
+​
+    = 420/√80
+
+⇒ 
+σ
+x
+‾
+   
+σ 
+x
+ 
+​
+     = 46.95 
+
+Example 3. The mean age of people in a colony is 34 years. Suppose the standard deviation is 15 years. The sample size is 50. Find the mean and standard deviation of the sample.
+
+Given: μ = 34, σ = 15, n = 50
+
+As per the Central Limit Theorem, the sample mean is equal to the  population mean.
+
+Hence, 
+μ
+x
+‾
+   
+μ 
+x
+ 
+​
+     = μ = 34 years
+
+Now, 
+σ
+x
+‾
+=
+σ
+n
+σ 
+x
+ 
+​
+ = 
+n
+​
+ 
+σ
+​
+ 
+
+⇒ 
+σ
+x
+‾
+   
+σ 
+x
+ 
+​
+    = 15/√50
+
+⇒ 
+σ
+x
+‾
+   
+σ 
+x
+ 
+​
+     = 2.12 years
+
+Example 4. The mean age of cigarette smokers is 35 years. Suppose the standard deviation is 10 years. The sample size is 39. Find the mean and standard deviation of the sample.
+
+Given: μ = 35, σ = 10, n = 39
+
+As per the Central Limit Theorem, the sample mean is equal to the  population mean.
+
+Hence, 
+μ
+x
+‾
+   
+μ 
+x
+ 
+​
+     = μ = 35 years
+
+Now, 
+σ
+x
+‾
+=
+σ
+n
+   
+σ 
+x
+ 
+​
+ = 
+n
+​
+ 
+σ
+​
+     = 10/√39
+
+⇒ 
+σ
+x
+‾
+   
+σ 
+x
+ 
+​
+     = 1.601 years
+
+Example 5. The mean time taken to read a newspaper is 8.2 minutes. Suppose the standard deviation is one minute. Take a sample of size 70. Find its mean and standard deviation.
+
+Given: μ = 8.2, σ = 1, n = 70
+
+As per the Central Limit Theorem, the sample mean is equal to the  population mean.
+
+Hence, 
+μ
+x
+‾
+   
+μ 
+x
+ 
+​
+     = μ = 8.2 minutes
+
+Now, 
+σ
+x
+‾
+=
+σ
+n
+   
+σ 
+x
+ 
+​
+ = 
+n
+​
+ 
+σ
+​
+     = 1/√70
+
+⇒ 
+σ
+x
+‾
+   
+σ 
+x
+ 
+​
+     = 0.11 minutes
+
+Example 6. A distribution has a mean of 12 and a standard deviation of 3. Find the mean and standard deviation if a sample of 36 is drawn from the distribution.
+
+Given: μ = 12, σ = 3, n = 36
+
+As per the Central Limit Theorem, the sample mean is equal to the  population mean.
+
+Hence, 
+μ
+x
+‾
+   
+μ 
+x
+ 
+​
+     = μ = 12
+
+Now, 
+σ
+x
+‾
+=
+σ
+n
+   
+σ 
+x
+ 
+​
+ = 
+n
+​
+ 
+σ
+​
+     = 3/√36
+
+⇒ 
+σ
+x
+‾
+   
+σ 
+x
+ 
+​
+     = 0.5
+
+Example 7. You want to estimate the mean income of a population with a margin of error of $5, assuming the population standard deviation is $50, and you want a 95% confidence level. What sample size do you need?
+
+Given: Z= 1.96 (for 95% confidence level), σ = 50, E = 5
+
+As per the Central Limit Theorem, the formula to calculate the sample size is.
+
+Hence, 
+n
+=
+(
+Z
+×
+σ
+E
+)
+2
+n=( 
+E
+Z×σ
+​
+ ) 
+2
+ 
+
+n
+=
+(
+1.96
+×
+50
+5
+)
+2
+=
+(
+98
+5
+)
+2
+=
+(
+19.6
+)
+2
+n=( 
+5
+1.96×50
+​
+ ) 
+2
+ =( 
+5
+98
+​
+ ) 
+2
+ =(19.6) 
+2
+ 
+
+n = 384.16 (Round up to the nearest whole number)
+n = 385
+
+The required sample size is 385.
+
+Example 8. Given that the population proportion p=0.40p=0.40p=0.40 and the sample size n=100, calculate the standard error for the sample proportion 
+p
+^
+p
+^
+​
+ .
+
+Given: n=100, p=40% or .40.
+
+As per the Central Limit Theorem, the formula to calculate standard error for proportions.
+
+σ
+p
+^
+=
+p
+(
+1
+−
+p
+)
+n
+=
+100
+0.40
+(
+1
+−
+0.40
+)
+=
+100
+0.24
+σ 
+p
+^
+​
+ 
+​
+ = 
+n
+p(1−p)
+​
+ 
+​
+ = 
+0.40(1−0.40)
+100
+​
+ 
+​
+ = 
+0.24
+100
+​
+ 
+​
+  = 0.04899
+
+σ
+p
+^
+=
+0.04899
+σ 
+p
+^
+​
+ 
+​
+ =0.04899
+
+σ
+p
+^
+≈
+0.04899
+σ 
+p
+^
+​
+ 
+​
+ ≈0.04899
+
+Related Articles
+Probability Distribution Function
+Standard Deviation
+Central Tendency
+Practice Problem Based on Central Limit Theorem
+Question 1. Given that the population mean is 50 and the population standard deviation is 10, find the Z-score for a sample mean of 52 when the sample size is 25.
+
+Question 2. If the population has a standard deviation of 15, and you take a sample of 50 from this population, calculate the standard error of the sample mean.
+
+Question 3. A population has a mean of 100 and a standard deviation of 20. You take a sample of 36. Calculate the 95% confidence interval for the sample mean.
+
+Question 4. The average height of adult women in a population is 160 cm with a standard deviation of 10 cm. What is the probability that a random sample of 25 women has a mean height greater than 162 cm?
+
+Answer:-
+
+1
+2.12
+[93.47, 106.53]
+0.1587
