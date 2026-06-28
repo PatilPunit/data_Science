@@ -1,0 +1,29 @@
+Lets see the steps involved in making a machine learning models
+
+1.Problem Statement
+2.Data Collection
+3.Exploratary Data analysis
+4.Data preprocessing?Cleaning
+5.Feature Selection
+6.Split the Dataset
+7.Model Selection
+8.Model training
+9.Model evaluation
+10.HyperParameter Tuninig
+11.Model Testing / Validation
+
+What is Exploratary data analysis
+
+
+Exploratory Data Analysis (EDA) is an important step in data analysis where we explore, summarize, and visualize data to understand its structure, detect patterns, identify anomalies, test assumptions, and check relationships between variables before applying any machine learning or statistical models.
+
+1.View Data - shape(),info(),describe(),head(),tail(),columns,rows
+2.summarize Data - Find mean,median,mode,std,max,min,variance. Helps to understand the spred of data
+3.Value Count - Identify unique values,Categorical columns,numerical columns
+4.Missing Value Analysis - Identifinf null and missing values to treat them
+5.visualization - Histogram - Distribution of values 
+                  Boxplot - Outliers 
+                  Barplot - Comparison 
+                  Heatmap - Linear Coreelation between numerical features
+                  scatterplot - bivariate relationships
+6.Target Exploration analysis - 
