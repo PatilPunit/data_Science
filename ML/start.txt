@@ -81,4 +81,10 @@ In ML we have some types :
 
 1. Supervised Learning which a very simple algorithm of machine learning which takes input variable and provide a output variable on the basis of pattern recognition 
 It has two types classification(yes or no) and regression(prediction)
- 
+
+2. Unsupervised learning , we dont predict anything but reduce complexity , recognise patterns more and spot outiers by the help of Unsupervised learning Algorithms
+Ex. Suggestion systems , recommendations systems
+
+3.Reinforcement Learning , it is training approach in which we reward the machinne for good and accurate result or completion of task or we punish the machine when it fail to ti complewte task
+ex. robotics
+Reinforcement learning is like training a dog
