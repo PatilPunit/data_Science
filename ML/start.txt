@@ -75,3 +75,10 @@ Machine learning enhances industrial efficiency through predictive analysis and 
 Predictive Maintenance: Detects equipment issues before failures occur.
 Quality Inspection: Uses computer vision to identify defects in manufactured products.
 Robotics Automation: Enables intelligent robots to perform repetitive industrial tasks efficiently
+
+
+In ML we have some types :
+
+1. Supervised Learning which a very simple algorithm of machine learning which takes input variable and provide a output variable on the basis of pattern recognition 
+It has two types classification(yes or no) and regression(prediction)
+ 
