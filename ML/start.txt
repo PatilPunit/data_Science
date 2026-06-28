@@ -1,0 +1,7 @@
+Machine learning (ML) is a subset of artificial intelligence (AI) that enables computers to learn from data and improve performance without being explicitly programmed.  Instead of following static, hard-coded rules, ML algorithms analyze vast datasets to identify patterns, make predictions, or generate content based on statistical models. 
+
+How it works involves training a model using data to adjust internal parameters, minimizing errors through iterative processes.  Common types include:
+
+Supervised Learning: Uses labeled data to predict outcomes (e.g., spam detection). 
+Unsupervised Learning: Finds hidden patterns in unlabeled data (e.g., customer segmentation). 
+Reinforcement Learning: Learns through trial and error to maximize rewards (e.g., game-playing AI).

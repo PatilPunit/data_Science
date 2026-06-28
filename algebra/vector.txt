@@ -1,0 +1,510 @@
+Chapter 1: Vector
+Definition
+
+A vector is a mathematical object that possesses:
+
+Magnitude (size or length)
+Direction
+
+Unlike a scalar, which only has magnitude.
+
+Scalar vs Vector
+Scalar
+
+Examples:
+
+Temperature = 30°C
+Weight = 60 kg
+Age = 20 years
+
+These have only magnitude.
+
+Vector
+
+Examples:
+
+Velocity = 50 km/h East
+Force = 100 N upward
+Wind = 20 km/h North
+
+These have both magnitude and direction.
+
+Mathematical Representation
+
+A vector is usually represented as:
+
+v=[
+x
+y
+	​
+
+]
+
+or
+
+v=(x,y)
+
+Example:
+
+v=[
+3
+4
+	​
+
+]
+Geometric Interpretation
+
+Imagine a graph.
+
+Starting point:
+
+(0,0)
+
+Ending point:
+
+(3,4)
+
+The arrow from origin to that point is a vector.
+
+Components of a Vector
+
+For
+
+v=[
+3
+4
+	​
+
+]
+
+3 → Horizontal movement
+
+4 → Vertical movement
+
+Dimension of a Vector
+
+The number of components determines the dimension.
+
+2-D Vector
+[
+2
+5
+	​
+
+]
+
+Dimension = 2
+
+3-D Vector
+	​
+
+1
+4
+8
+	​
+
+	​
+
+
+Dimension = 3
+
+n-Dimensional Vector
+	​
+
+x
+1
+	​
+
+x
+2
+	​
+
+x
+3
+	​
+
+⋮
+x
+n
+	​
+
+	​
+
+	​
+
+
+Dimension = n
+
+This is what Data Science mostly uses.
+
+Why Data Scientists Love Vectors
+
+Suppose we have a student:
+
+Age = 18
+Height = 170 cm
+Weight = 60 kg
+
+We can represent this student as:
+
+x=
+	​
+
+18
+170
+60
+	​
+
+	​
+
+
+This vector is called a feature vector.
+
+Every row in a dataset is essentially a vector.
+
+Example:
+
+Age	Height	Weight
+18	170	60
+20	175	65
+19	168	58
+
+Each row is a vector.
+
+Magnitude (Length) of a Vector
+
+One of the most important concepts.
+
+For:
+
+v=[
+3
+4
+	​
+
+]
+
+Magnitude:
+
+∣∣v∣∣=
+3
+2
++4
+2
+	​
+
+=
+25
+	​
+
+=5
+
+This comes from the Pythagorean theorem.
+
+General Formula
+
+For
+
+v=
+	​
+
+x
+1
+	​
+
+x
+2
+	​
+
+x
+3
+	​
+
+⋮
+x
+n
+	​
+
+	​
+
+	​
+
+
+Magnitude:
+
+∣∣v∣∣=
+x
+1
+2
+	​
+
++x
+2
+2
+	​
+
++⋯+x
+n
+2
+	​
+
+	​
+
+Unit Vector
+
+A vector whose magnitude equals 1.
+
+Example
+
+u=[
+0.6
+0.8
+	​
+
+]
+
+Magnitude:
+
+0.6
+2
++0.8
+2
+	​
+
+=1
+
+Hence it is a unit vector.
+
+Normalization
+
+Converting any vector into a unit vector.
+
+Formula:
+
+v
+^
+=
+∣∣v∣∣
+v
+	​
+
+
+Example
+
+v=[
+3
+4
+	​
+
+]
+
+Magnitude = 5
+
+Normalized vector:
+
+v
+^
+=[
+3/5
+4/5
+	​
+
+]=[
+0.6
+0.8
+	​
+
+]
+Vector Addition
+
+Suppose:
+
+a=[
+2
+3
+	​
+
+]
+b=[
+4
+5
+	​
+
+]
+
+Then
+
+a+b=[
+6
+8
+	​
+
+]
+
+Add corresponding components.
+
+Vector Subtraction
+a−b=[
+2−4
+3−5
+	​
+
+]=[
+−2
+−2
+	​
+
+]
+Scalar Multiplication
+
+Multiply every component.
+
+Example:
+
+3[
+2
+5
+	​
+
+]=[
+6
+15
+	​
+
+]
+Dot Product (Extremely Important)
+
+The most important operation in Data Science.
+
+Given:
+
+a=
+	​
+
+1
+2
+3
+	​
+
+	​
+
+b=
+	​
+
+4
+5
+6
+	​
+
+	​
+
+
+Dot product:
+
+a⋅b=1(4)+2(5)+3(6)
+=4+10+18
+=32
+Why Dot Product Matters
+
+Used in:
+
+Machine Learning
+Neural Networks
+Recommendation Systems
+Similarity Search
+Embeddings
+Linear Regression
+
+Every neuron in a neural network performs a weighted dot product.
+
+Angle Between Vectors
+
+Formula:
+
+cosθ=
+∣∣a∣∣∣∣b∣∣
+a⋅b
+	​
+
+
+Used heavily in:
+
+Cosine Similarity
+Search Engines
+NLP
+LLMs like ChatGPT
+Real Data Science Interpretation
+
+Suppose two movies are represented by feature vectors:
+
+Movie A:
+
+[8,9,7,6]
+
+Movie B:
+
+[7,8,7,5]
+
+A large cosine similarity means:
+
+These movies are similar.
+
+This is how recommendation systems work.
+
+Terminology You Must Know
+Term	Meaning
+Scalar	Single value
+Vector	Ordered list of values
+Dimension	Number of components
+Magnitude / Norm	Length of vector
+Unit Vector	Magnitude = 1
+Feature Vector	Data point represented as a vector
+Dot Product	Multiplication measure between vectors
+Normalization	Converting vector to unit length
+Cosine Similarity	Measures similarity between vectors
+Data Science Perspective
+
+When you open a dataset:
+
+Age	Income	Experience
+22	50000	1
+30	90000	7
+
+The computer does not see a table.
+
+It sees vectors:
+
+[22,50000,1]
+[30,90000,7]
+
+Machine Learning is fundamentally about performing mathematical operations on these vectors.
+
+Practice Questions
+Find the magnitude of:
+[
+6
+8
+	​
+
+]
+Normalize:
+[
+3
+4
+	​
+
+]
+Find the dot product:
+[1,2,3]⋅[2,4,6]
+What is the dimension of:
+[5,8,2,9,1]
+
+A student's features are:
+
+Age = 20
+Height = 175
+Weight = 65
+
+Write the feature vector.
+
+Answer these, and then we'll move to Vector Spaces, Linear Independence, Basis, Span, and why they are the hidden foundation of Machine Learning.
