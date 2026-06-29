@@ -26,4 +26,20 @@ Exploratory Data Analysis (EDA) is an important step in data analysis where we e
                   Barplot - Comparison 
                   Heatmap - Linear Coreelation between numerical features
                   scatterplot - bivariate relationships
-6.Target Exploration analysis - 
+6.Target Exploration analysis 
+
+
+Parts of EDA -
+
+1.Data Cleaning -a. Handle missing values (nulls) like droping or filling them by mean , mode,median or any other value
+                 b. Removing duplicates - droping duplicates
+                 c. Fixing data types - conversion correctly
+                 d. Handling inconsistent Values - Like we can write 'Male','Male','M' , nut we need to operate and make consistent values 
+                 e. Detect and handle outliers  - We need to treat outliers by exploring them
+                 g. Handling illogical and invlaid value - height/age cant be -10,9999999
+
+2.Data preprocessing - Data preprocessing is the process to convert the raw data into machine learning feedable data .
+                       So basically we are converting the data into machine can learn and unnderstand it easily
+
+                    1. Encoding Categorical data - Lets say we have 'male' or 'yes' machine cant undertsand such text so 
+                    we need to convert it into numbers
