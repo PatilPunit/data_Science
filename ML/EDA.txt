@@ -45,3 +45,9 @@ Parts of EDA -
                     we need to convert it into numbers
 
                     2. Feature Transfornation - 
+                    Scaling , is the process use to equilate the features or input varaibles so the machine learining ,model would be accurate 
+
+                    ex. if the model has input of age and salary , so the ages like 28,29,31,21,20 and salary would be like ,20000,30000,23000 so now you can ibesrve the huge diffrence which manipulate and the mathematical algorithm and can be inaccurate the model. 
+
+                    so what the scaling does is that it scale the features in same format like 0.1,0.2,0.11 etc.
+
