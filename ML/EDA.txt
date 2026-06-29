@@ -44,11 +44,4 @@ Parts of EDA -
                     1. Encoding Categorical data - Lets say we have 'male' or 'yes' machine cant undertsand such text so 
                     we need to convert it into numbers
 
-                  
-
-
-jbdfhfbdk
-
-
-
-                  bhdbhdgdgg
+                    2. Feature Transfornation - 
