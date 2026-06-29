@@ -44,7 +44,7 @@ Parts of EDA -
                     1. Encoding Categorical data - Lets say we have 'male' or 'yes' machine cant undertsand such text so 
                     we need to convert it into numbers
 
-                    2. Feature Transfornation - 
+                    2. Feature Transfornation - Handling the skewed data 
                     
                     
                     3.Scaling , is the process use to equilate the features or input varaibles so the machine learining ,model would be accurate 
