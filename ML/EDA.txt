@@ -56,3 +56,8 @@ Parts of EDA -
                      a.Min-Max scaling - between 0 and 1
                      b.Z-scpre scaling - std 0 - 1
 
+
+3. Feature engneering - It is a process to normalize,select the important and accurate features to provide the machine learning model so it can be more accurate . 
+                        
+                        1. normalization - Making logical units of data to provide the model so it can perform itd best
+                        2. Feature Selection - slecting the best feature to privide model 
