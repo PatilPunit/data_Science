@@ -29,3 +29,7 @@ print(b)
 
 print(type(a))
 print(type(b))
+
+
+
+df.sele
