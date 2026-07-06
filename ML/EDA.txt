@@ -61,3 +61,4 @@ Parts of EDA -
                         
                         1. normalization - Making logical units of data to provide the model so it can perform itd best
                         2. Feature Selection - slecting the best feature to privide model 
+                        3. Embedding MOdels - Shrink coffiecient to 0 
