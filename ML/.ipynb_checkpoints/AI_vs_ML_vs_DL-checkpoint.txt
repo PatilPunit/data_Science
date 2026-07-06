@@ -1,0 +1,27 @@
+We often confuse the terms Artificial Intelligence (AI), Machine Learning (ML) and Deep Learning (DL), assuming they all mean the same thing. But in reality, they represent different levels of intelligent computing. AI is the broadest field, ML is a subset of AI and DL is a further subset of ML. Let’s define each one, highlight its features and compare them.
+
+What-is-AI_.webpWhat-is-AI_.webp
+1. Artificial Intelligence (AI)
+Artificial intelligence is the field of computer science focused on creating systems that can perform tasks requiring human-like intelligence such as reasoning, problem-solving, planning and understanding natural language. It includes rule-based systems as well as data-driven approaches like ML and DL.
+
+The broadest field covering ML, DL, robotics and NLP.
+Mimics human cognitive abilities like learning and decision-making.
+Divided into Narrow AI (task-specific) and General AI (human-level, not yet achieved).
+Still evolving but already powerful in real-world use cases.
+Examples: Sophia robot, AI chatbots, fraud detection, medical diagnosis.
+2. Machine Learning (ML)
+Machine Learning is a branch of AI that enables systems to learn from data and improve their performance without being explicitly programmed. Instead of following fixed rules, ML algorithms analyze past data, detect patterns and use them to make predictions or decisions in new situations.
+
+Learns from structured and labeled datasets.
+Requires human input for training and corrections.
+Uses algorithms such as regression, clustering and decision trees.
+Improves accuracy with more data.
+Examples: Amazon recommendations, Netflix suggestions, spam detection.
+3. Deep Learning (DL)
+Deep Learning is a subset of machine learning that uses artificial neural networks with many layers to automatically learn complex patterns from large datasets. Unlike traditional ML, it can extract features on its own making it useful for handling unstructured data such as images, speech and text.
+
+Built on neural networks inspired by the human brain.
+Learns automatically with minimal human guidance.
+Needs massive datasets and high computational power.
+Excels in tasks like vision, speech and natural language.
+Examples: Self-driving cars, facial recognition, voice assistants.
