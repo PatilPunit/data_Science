@@ -88,3 +88,4 @@ Ex. Suggestion systems , recommendations systems
 3.Reinforcement Learning , it is training approach in which we reward the machinne for good and accurate result or completion of task or we punish the machine when it fail to ti complewte task
 ex. robotics
 Reinforcement learning is like training a dog
+ghjk
